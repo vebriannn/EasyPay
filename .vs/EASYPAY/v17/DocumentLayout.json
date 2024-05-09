@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|c:\\users\\novia\\onedrive\\documents\\xi pplg6 vebriann\\semester 1\\mk 2 pbt pak fendi\\praktek\\easypay\\easypay\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|solutionrelative:easypay\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|c:\\users\\novia\\onedrive\\documents\\xi pplg6 vebriann\\semester 1\\mk 2 pbt pak fendi\\praktek\\easypay\\easypay\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|solutionrelative:easypay\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|c:\\users\\novia\\onedrive\\documents\\xi pplg6 vebriann\\semester 1\\mk 2 pbt pak fendi\\praktek\\easypay\\easypay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|solutionrelative:easypay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormSignUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormSignUp.cs",
+              "RelativeDocumentMoniker": "EASYPAY\\FormSignUp.cs",
+              "ToolTip": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormSignUp.cs [Design]",
+              "RelativeToolTip": "EASYPAY\\FormSignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T13:05:30.627Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormSignUp.cs",
+              "DocumentMoniker": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormSignUp.cs",
+              "RelativeDocumentMoniker": "EASYPAY\\FormSignUp.cs",
+              "ToolTip": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormSignUp.cs",
+              "RelativeToolTip": "EASYPAY\\FormSignUp.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAcwFAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T12:47:19.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\Program.cs",
+              "RelativeDocumentMoniker": "EASYPAY\\Program.cs",
+              "ToolTip": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\Program.cs",
+              "RelativeToolTip": "EASYPAY\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T11:43:49.794Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

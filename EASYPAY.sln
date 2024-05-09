@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34407.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EASYPAY", "EASYPAY\EASYPAY.csproj", "{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39A83A54-92B5-4DBE-ACF3-8AE81ADBBE22}
+	EndGlobalSection
+EndGlobal
