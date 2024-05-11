@@ -34,6 +34,8 @@ C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fend
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.csproj.AssemblyReference.cache
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.csproj.CopyComplete
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPayment.resources
-C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTrxPln.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormSignIn.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormSignUp.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormCheckPln.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPLN.FormBuyPln.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPLN.FormResultsTrxPln.resources

@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|c:\\users\\novia\\onedrive\\documents\\xi pplg6 vebriann\\semester 1\\mk 2 pbt pak fendi\\praktek\\easypay\\easypay\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|solutionrelative:easypay\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|c:\\users\\novia\\onedrive\\documents\\xi pplg6 vebriann\\semester 1\\mk 2 pbt pak fendi\\praktek\\easypay\\easypay\\formpln\\formbuypln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|solutionrelative:easypay\\formpln\\formbuypln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|c:\\users\\novia\\onedrive\\documents\\xi pplg6 vebriann\\semester 1\\mk 2 pbt pak fendi\\praktek\\easypay\\easypay\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|solutionrelative:easypay\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|c:\\users\\novia\\onedrive\\documents\\xi pplg6 vebriann\\semester 1\\mk 2 pbt pak fendi\\praktek\\easypay\\easypay\\formpln\\formbuypln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|solutionrelative:easypay\\formpln\\formbuypln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|c:\\users\\novia\\onedrive\\documents\\xi pplg6 vebriann\\semester 1\\mk 2 pbt pak fendi\\praktek\\easypay\\easypay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\easypay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBB8A7C4-D7DC-44E0-AA1E-A3D338EFCEF9}|EASYPAY\\EASYPAY.csproj|solutionrelative:easypay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -55,26 +55,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormSignUp.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormSignUp.cs",
-              "RelativeDocumentMoniker": "EASYPAY\\FormSignUp.cs",
-              "ToolTip": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormSignUp.cs [Design]",
-              "RelativeToolTip": "EASYPAY\\FormSignUp.cs [Design]",
+              "Title": "FormBuyPln.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormPLN\\FormBuyPln.cs",
+              "RelativeDocumentMoniker": "EASYPAY\\FormPLN\\FormBuyPln.cs",
+              "ToolTip": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormPLN\\FormBuyPln.cs [Design]",
+              "RelativeToolTip": "EASYPAY\\FormPLN\\FormBuyPln.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T13:05:30.627Z",
+              "WhenOpened": "2024-05-11T12:07:59.49Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormSignUp.cs",
-              "DocumentMoniker": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormSignUp.cs",
-              "RelativeDocumentMoniker": "EASYPAY\\FormSignUp.cs",
-              "ToolTip": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormSignUp.cs",
-              "RelativeToolTip": "EASYPAY\\FormSignUp.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAcwFAAAAANAAAA",
+              "Title": "FormBuyPln.cs",
+              "DocumentMoniker": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormPLN\\FormBuyPln.cs",
+              "RelativeDocumentMoniker": "EASYPAY\\FormPLN\\FormBuyPln.cs",
+              "ToolTip": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\FormPLN\\FormBuyPln.cs",
+              "RelativeToolTip": "EASYPAY\\FormPLN\\FormBuyPln.cs",
+              "ViewState": "AQIAAMgAAAAAAAAAAAAowNAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T12:47:19.639Z",
+              "WhenOpened": "2024-05-11T08:38:50.862Z",
               "EditorCaption": ""
             },
             {
@@ -85,7 +85,7 @@
               "RelativeDocumentMoniker": "EASYPAY\\Program.cs",
               "ToolTip": "C:\\Users\\novia\\OneDrive\\Documents\\XI PPLG6 VEBRIANN\\Semester 1\\MK 2 PBT Pak Fendi\\praktek\\EASYPAY\\EASYPAY\\Program.cs",
               "RelativeToolTip": "EASYPAY\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T11:43:49.794Z",
               "EditorCaption": ""

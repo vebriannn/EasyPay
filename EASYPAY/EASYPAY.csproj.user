@@ -7,16 +7,22 @@
     <Compile Update="FormPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormSignIn.cs">
+    <Compile Update="FormAuth\FormSignIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormOnBoarding.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormSignUp.cs">
+    <Compile Update="FormAuth\FormSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormTrxPln.cs">
+    <Compile Update="FormPLN\FormBuyPln.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormPLN\FormCheckPln.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormPLN\FormResultsTrxPln.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Profile.cs">

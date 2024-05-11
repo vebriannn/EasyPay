@@ -47,7 +47,7 @@ namespace EASYPAY
                     {
                         labelEmail.Text = reader.GetString(2);
                     }
-                    
+
                     // convert digit 
                     saldo = reader.GetDouble(6);
                     string saldoFormat = saldo.ToString("N0");
@@ -67,6 +67,13 @@ namespace EASYPAY
             {
                 connection.Close();
             }
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            FormCheckPln trxPln = new FormCheckPln();
+            trxPln.Show();
+            this.Hide();
         }
     }
 }
