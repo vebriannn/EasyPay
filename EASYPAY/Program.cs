@@ -1,5 +1,3 @@
-using EASYPAY.FormPLN;
-
 namespace EASYPAY
 {
     internal static class Program
@@ -13,9 +11,9 @@ namespace EASYPAY
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormOnBoarding());
+            Application.Run(new OnBoarding());
         }
 
- 
+
     }
 }

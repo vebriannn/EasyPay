@@ -16,8 +16,6 @@ C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fend
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.genruntimeconfig.cache
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\ref\EASYPAY.dll
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.Profile.resources
-C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormDashboard.resources
-C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormOnBoarding.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\bin\Debug\net8.0-windows\Google.Protobuf.dll
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
@@ -34,8 +32,11 @@ C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fend
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.csproj.AssemblyReference.cache
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.csproj.CopyComplete
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPayment.resources
-C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormSignIn.resources
-C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormSignUp.resources
-C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormCheckPln.resources
-C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPLN.FormBuyPln.resources
-C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPLN.FormResultsTrxPln.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.Dashboard.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormAuth.SignUp.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPLN.CheckPln.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormAuth.SignIn.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.OnBoarding.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPLN.BuyTokenPln.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormHslPbyr.Resi.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.profile.ViewProfil.resources

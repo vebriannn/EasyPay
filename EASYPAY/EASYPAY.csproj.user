@@ -1,31 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="FormDashboard.cs">
+    <Compile Update="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAuth\SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAuth\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormResi\Resi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormAuth\FormSignIn.cs">
+    <Compile Update="FormPLN\BuyTokenPln.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormOnBoarding.cs">
+    <Compile Update="OnBoarding.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormAuth\FormSignUp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormPLN\FormBuyPln.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormPLN\FormCheckPln.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormPLN\FormResultsTrxPln.cs">
+    <Compile Update="FormPLN\CheckPln.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProfile\ViewProfil.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
