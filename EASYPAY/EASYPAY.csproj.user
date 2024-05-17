@@ -4,10 +4,34 @@
     <Compile Update="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormAir\BuyWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAir\CheckWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAir\ChoiceWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormAuth\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormAuth\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDataPulsa\CheckNomor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDataPulsa\CheckTipeNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDataPulsa\Data\ChoiceData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDataPulsa\Pulsa\ChoicePulsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProfile\EditProfile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormResi\Resi.cs">

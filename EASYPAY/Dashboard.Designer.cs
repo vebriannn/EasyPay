@@ -47,6 +47,9 @@
             pictureBox1 = new PictureBox();
             labelSaldo = new Label();
             pictureListrik = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBackground).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -55,6 +58,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureDashboard).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureListrik).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
@@ -247,11 +253,46 @@
             pictureListrik.TabStop = false;
             pictureListrik.Click += pictureListrik_Click;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(351, 83);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(34, 35);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 76;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(423, 83);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(34, 35);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 77;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.icon__3_;
+            pictureBox7.Location = new Point(500, 83);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(34, 35);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 78;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(pictureBox7);
+            Controls.Add(pictureBox6);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureListrik);
             Controls.Add(labelSaldo);
             Controls.Add(label8);
@@ -279,6 +320,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureDashboard).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureListrik).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -302,5 +346,8 @@
         private PictureBox pictureBox1;
         private Label labelSaldo;
         private PictureBox pictureListrik;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
     }
 }

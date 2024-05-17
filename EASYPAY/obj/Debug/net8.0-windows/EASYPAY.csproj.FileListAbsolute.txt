@@ -40,3 +40,11 @@ C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fend
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormPLN.BuyTokenPln.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormHslPbyr.Resi.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.profile.ViewProfil.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormProfile.EditProfile.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormAir.ChoiceWater.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormAir.CheckWater.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormAir.BuyWater.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormDataPulsa.CheckNomor.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormDataPulsa.Pulsa.ChoicePulsa.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormDataPulsa.Data.CheckTipeNumber.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormDataPulsa.Data.ChoiceData.resources

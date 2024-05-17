@@ -37,6 +37,8 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            btnUpgrade = new Button();
+            btnEdit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -119,11 +121,34 @@
             label5.TabIndex = 44;
             label5.Text = "label5";
             // 
+            // btnUpgrade
+            // 
+            btnUpgrade.Font = new Font("Poppins", 8F);
+            btnUpgrade.Location = new Point(673, 112);
+            btnUpgrade.Name = "btnUpgrade";
+            btnUpgrade.Size = new Size(75, 25);
+            btnUpgrade.TabIndex = 45;
+            btnUpgrade.Text = "Upgrade";
+            btnUpgrade.UseVisualStyleBackColor = true;
+            // 
+            // btnEdit
+            // 
+            btnEdit.Font = new Font("Poppins", 8F);
+            btnEdit.Location = new Point(306, 366);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(75, 25);
+            btnEdit.TabIndex = 46;
+            btnEdit.Text = "Edit Data";
+            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
+            // 
             // ViewProfil
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(btnEdit);
+            Controls.Add(btnUpgrade);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -150,5 +175,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Button btnUpgrade;
+        private Button btnEdit;
     }
 }

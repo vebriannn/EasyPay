@@ -1,4 +1,5 @@
-﻿using EASYPAY.FormAuth;
+﻿using EASYPAY.Backend;
+using EASYPAY.FormAuth;
 using EASYPAY.FormHslPbyr;
 using MySql.Data.MySqlClient;
 using System;
@@ -15,12 +16,11 @@ namespace EASYPAY.FormPLN
 {
     public partial class BuyTokenPln : Form
     {
-        public static int pilihHarga = 0;
-        public static string nomor_pembelian;
-        public static string tanggalPembelianString;
+        private int pilihHarga = 0;
         private string column = "";
         private string methodBayar;
         private double sisaSaldo = 0;
+
 
         string db = SignIn.db;
         string id = SignIn.id_user;
@@ -159,7 +159,9 @@ namespace EASYPAY.FormPLN
 
             if (saldo >= pilihHarga)
             {
-                updateSaldo();
+                UpdatedUsers updatedUsers = new UpdatedUsers();
+                updatedUsers.updateSaldo(column, sisaSaldo, "pln", pilihHarga);
+
             }
             else
             {
@@ -167,72 +169,7 @@ namespace EASYPAY.FormPLN
             }
         }
 
-        private void updateSaldo()
-        {
-            connection = new MySqlConnection(db);
-
-            try
-            {
-                connection.Open();
-                string queryCheck = $"UPDATE users SET {column} = '{sisaSaldo}' WHERE id = {id}";
-                MySqlCommand command = new MySqlCommand(queryCheck, connection);
-                int reader = command.ExecuteNonQuery();
-                if (reader > 0)
-                {
-                    AddDataTransaction("pln");
-                }
-                else
-                {
-                    MessageBox.Show("Pembayaran Gagal, Ada Beberapa Kesalahan!!!");
-                }
-
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error Mysql: " + ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-        }
-        private void AddDataTransaction(string jenis_pembelian)
-        {
-
-            connection = new MySqlConnection(db);
-
-            DateTime tanggalPembelian = DateTime.Now;
-            tanggalPembelianString = tanggalPembelian.ToString("yyyy-MM-dd HH:mm:ss");
-            nomor_pembelian = generateNomorTransaksi();
-
-            try
-            {
-                connection.Open();
-                string queryCheck = $"INSERT INTO riwayat_transaksi (id_pengguna, nomor_pembelian, jenis_pembelian,  harga, tanggal_pembelian) VALUES ('{id}', '{nomor_pembelian}', '{jenis_pembelian}', '{pilihHarga}', '{tanggalPembelianString}')";
-                MySqlCommand command = new MySqlCommand(queryCheck, connection);
-                int reader = command.ExecuteNonQuery();
-                if (reader > 0)
-                {
-                    Resi frtp = new Resi(nomor_pembelian);
-                    frtp.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Gagal Menambahkan Data!!!");
-                }
-
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error Mysql: " + ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-        }
-
+       
         private void GenerateToken()
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -244,21 +181,6 @@ namespace EASYPAY.FormPLN
             {
                 stringBuilder.Append(chars[random.Next(chars.Length)]);
             }
-        }
-
-        private string generateNomorTransaksi()
-        {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            var random = new Random();
-            var stringBuilder = new StringBuilder(10);
-
-            // Menghasilkan string acak dengan panjang tertentu
-            for (int i = 0; i < 10; i++)
-            {
-                stringBuilder.Append(chars[random.Next(chars.Length)]);
-            }
-
-            return stringBuilder.ToString();
         }
 
     }

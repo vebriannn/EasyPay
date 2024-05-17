@@ -1,4 +1,6 @@
-﻿using EASYPAY.FormAuth;
+﻿using EASYPAY.FormAir;
+using EASYPAY.FormAuth;
+using EASYPAY.FormDataPulsa;
 using EASYPAY.FormPLN;
 using EASYPAY.profile;
 using MySql.Data.MySqlClient;
@@ -93,6 +95,21 @@ namespace EASYPAY
             ViewProfil vp = new ViewProfil();
             vp.Show();
             this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ChoiceWater choice = new ChoiceWater();
+            choice.Show();
+            this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            FormDataPulsa.CheckNomor cn = new FormDataPulsa.CheckNomor();
+            cn.Show();
+            this.Hide();
+
         }
     }
 }

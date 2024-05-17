@@ -80,12 +80,15 @@ namespace EASYPAY.FormAuth
             try
             {
                 connection.Open();
-                string queryInsert = $"INSERT INTO users (nama, email, nomor, pin) VALUES('{nama}', '{email}', '{nomor}', '{pin}') "; ;
+                string queryInsert = $"INSERT INTO users (nama, email, nomor, pin) VALUES('{nama}', '{email}', '{nomor}', '{pin}') ";
                 MySqlCommand command = new MySqlCommand(queryInsert, connection);
                 int execute = command.ExecuteNonQuery();
                 if (execute > 0)
                 {
                     MessageBox.Show("Akun Berhasil Di Buat!");
+                    SignIn si = new SignIn();
+                    si.Show();
+                    this.Hide();
                 }
                 else
                 {
