@@ -93,6 +93,16 @@ namespace EASYPAY.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap detail_trx_bener_lanjutan_pulsa___data {
+            get {
+                object obj = ResourceManager.GetObject("detail trx bener lanjutan pulsa & data", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hashtag {
             get {
                 object obj = ResourceManager.GetObject("hashtag", resourceCulture);

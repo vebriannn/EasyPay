@@ -41,7 +41,6 @@ namespace EASYPAY.FormAir
             labelNomor.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             checkBoxBalance.BackColor = ColorTranslator.FromHtml("#BBDEFA");
-            checkBoxSavings.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             BtnConfirmBuy.Visible = false;
 
@@ -54,13 +53,13 @@ namespace EASYPAY.FormAir
         private void Btn50_Click(object sender, EventArgs e)
         {
             pilihHarga = 52000;
-            MessageBox.Show("Token Listrik Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            MessageBox.Show("Token Listrik Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void checkBtnBuy()
         {
-            if (pilihHarga != 0 && methodBayar == "Wallet" || methodBayar == "Savings")
+            if (pilihHarga != 0 && methodBayar == "Wallet")
             {
                 BtnConfirmBuy.Visible = true;
             }
@@ -78,16 +77,12 @@ namespace EASYPAY.FormAir
         private void checkSaldo()
         {
             double saldo = 0;
+            connection = new MySqlConnection(db);
 
             if (methodBayar == "Wallet")
             {
                 column = "saldo_wallet";
             }
-            else if (methodBayar == "Savings")
-            {
-                column = "saldo_savings";
-            }
-            connection = new MySqlConnection(db);
 
             try
             {
@@ -119,6 +114,7 @@ namespace EASYPAY.FormAir
             {
                 UpdatedUsers updatedUsers = new UpdatedUsers();
                 updatedUsers.updateSaldo(column, sisaSaldo, "pdam", pilihHarga);
+                this.Close();
             }
             else
             {
@@ -128,21 +124,7 @@ namespace EASYPAY.FormAir
 
         private void checkBoxBalance_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxSavings.Checked == true)
-            {
-                checkBoxSavings.Checked = false;
-            }
             methodBayar = "Wallet";
-            checkBtnBuy();
-        }
-
-        private void checkBoxSavings_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxBalance.Checked == true)
-            {
-                checkBoxBalance.Checked = false;
-            }
-            methodBayar = "Savings";
             checkBtnBuy();
         }
     }

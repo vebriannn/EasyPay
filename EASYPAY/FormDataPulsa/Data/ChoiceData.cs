@@ -18,6 +18,7 @@ namespace EASYPAY.FormDataPulsa.Data
     public partial class ChoiceData : Form
     {
 
+        public static string produk = "";
         private int pilihHarga = 0;
         private string column = "";
         private string methodBayar;
@@ -61,7 +62,6 @@ namespace EASYPAY.FormDataPulsa.Data
             btn20.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             checkBoxBalance.BackColor = ColorTranslator.FromHtml("#BBDEFA");
-            checkBoxSavings.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             BtnConfirmBuy.Visible = false;
 
@@ -72,64 +72,57 @@ namespace EASYPAY.FormDataPulsa.Data
         private void btn225_Click(object sender, EventArgs e)
         {
             pilihHarga = 225000;
-            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            produk = "Paket Data Unlimited 2GB Sepuasnya";
+            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void btn100_Click(object sender, EventArgs e)
         {
             pilihHarga = 100000;
-            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            produk = "Paket Data Unlimited 100GB 30 Hari";
+            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void btn145_Click(object sender, EventArgs e)
         {
             pilihHarga = 14500;
-            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            produk = "Paket Data Unlimited 3GB 7 Hari";
+            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void btn33_Click(object sender, EventArgs e)
         {
             pilihHarga = 33000;
-            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            produk = "Paket Data Unlimited 10GB 30 Hari";
+            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void btn44_Click(object sender, EventArgs e)
         {
             pilihHarga = 44000;
-            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            produk = "Paket Data Unlimited 16GB 30 Hari";
+            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void btn20_Click(object sender, EventArgs e)
         {
             pilihHarga = 20000;
-            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            produk = "Paket Data Unlimited 6GB 7 Hari";
+            MessageBox.Show("Paket Data Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void checkBoxBalance_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxSavings.Checked == true)
-            {
-                checkBoxSavings.Checked = false;
-            }
             methodBayar = "Wallet";
             checkBtnBuy();
         }
 
-        private void checkBoxSavings_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxBalance.Checked == true)
-            {
-                checkBoxBalance.Checked = false;
-            }
-            methodBayar = "Savings";
-            checkBtnBuy();
-        }
 
         private void BtnConfirmBuy_Click(object sender, EventArgs e)
         {
@@ -138,7 +131,7 @@ namespace EASYPAY.FormDataPulsa.Data
 
         public void checkBtnBuy()
         {
-            if (pilihHarga != 0 && methodBayar == "Wallet" || methodBayar == "Savings")
+            if (pilihHarga != 0 && methodBayar == "Wallet")
             {
                 BtnConfirmBuy.Visible = true;
             }
@@ -155,10 +148,6 @@ namespace EASYPAY.FormDataPulsa.Data
             if (methodBayar == "Wallet")
             {
                 column = "saldo_wallet";
-            }
-            else if (methodBayar == "Savings")
-            {
-                column = "saldo_savings";
             }
             connection = new MySqlConnection(db);
 
@@ -192,6 +181,7 @@ namespace EASYPAY.FormDataPulsa.Data
             {
                 UpdatedUsers updatedUsers = new UpdatedUsers();
                 updatedUsers.updateSaldo(column, sisaSaldo, "data", pilihHarga);
+                this.Hide();
 
             }
             else

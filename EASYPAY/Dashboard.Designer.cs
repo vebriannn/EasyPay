@@ -35,13 +35,11 @@
             labelEmail = new Label();
             labelNama = new Label();
             pictureBackground = new PictureBox();
-            label8 = new Label();
             labelDashboard = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             pictureBox5 = new PictureBox();
-            pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureDashboard = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -53,7 +51,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBackground).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureDashboard).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -116,18 +113,6 @@
             pictureBackground.TabIndex = 0;
             pictureBackground.TabStop = false;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Franklin Gothic Book", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = SystemColors.ActiveCaptionText;
-            label8.Location = new Point(86, 299);
-            label8.Name = "label8";
-            label8.Size = new Size(38, 15);
-            label8.TabIndex = 73;
-            label8.Text = "Saving";
-            // 
             // labelDashboard
             // 
             labelDashboard.AutoSize = true;
@@ -163,6 +148,7 @@
             label4.Size = new Size(37, 15);
             label4.TabIndex = 70;
             label4.Text = "Wallet";
+            label4.Click += label4_Click;
             // 
             // label3
             // 
@@ -187,17 +173,6 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 68;
             pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackColor = Color.Transparent;
-            pictureBox4.Image = Properties.Resources.card_receive;
-            pictureBox4.Location = new Point(58, 295);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(19, 21);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 67;
-            pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -295,13 +270,11 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureListrik);
             Controls.Add(labelSaldo);
-            Controls.Add(label8);
             Controls.Add(labelDashboard);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureDashboard);
             Controls.Add(pictureBox1);
@@ -315,7 +288,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBackground).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureDashboard).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -334,13 +306,11 @@
         private Label labelEmail;
         private Label labelNama;
         private PictureBox pictureBackground;
-        private Label label8;
         private Label labelDashboard;
         private Label label5;
         private Label label4;
         private Label label3;
         private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureDashboard;
         private PictureBox pictureBox1;

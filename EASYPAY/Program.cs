@@ -1,4 +1,5 @@
 using EASYPAY.FormAir;
+using EASYPAY.FormWallet;
 
 namespace EASYPAY
 {

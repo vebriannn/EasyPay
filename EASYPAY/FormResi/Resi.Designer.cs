@@ -36,6 +36,7 @@ namespace EASYPAY.FormHslPbyr
             labelHarga = new Label();
             labelDate = new Label();
             pictureBox1 = new PictureBox();
+            detail = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -43,11 +44,11 @@ namespace EASYPAY.FormHslPbyr
             // 
             labelNoTrx.AutoSize = true;
             labelNoTrx.BackColor = SystemColors.ActiveCaptionText;
-            labelNoTrx.Font = new Font("Poppins", 7F);
+            labelNoTrx.Font = new Font("Poppins", 8F);
             labelNoTrx.ForeColor = Color.White;
-            labelNoTrx.Location = new Point(412, 300);
+            labelNoTrx.Location = new Point(412, 298);
             labelNoTrx.Name = "labelNoTrx";
-            labelNoTrx.Size = new Size(35, 17);
+            labelNoTrx.Size = new Size(40, 19);
             labelNoTrx.TabIndex = 0;
             labelNoTrx.Text = "label1";
             // 
@@ -55,11 +56,11 @@ namespace EASYPAY.FormHslPbyr
             // 
             labelJP.AutoSize = true;
             labelJP.BackColor = SystemColors.ActiveCaptionText;
-            labelJP.Font = new Font("Poppins", 7F);
+            labelJP.Font = new Font("Poppins", 8F);
             labelJP.ForeColor = Color.White;
             labelJP.Location = new Point(412, 317);
             labelJP.Name = "labelJP";
-            labelJP.Size = new Size(35, 17);
+            labelJP.Size = new Size(40, 19);
             labelJP.TabIndex = 1;
             labelJP.Text = "label1";
             // 
@@ -67,11 +68,11 @@ namespace EASYPAY.FormHslPbyr
             // 
             labelHarga.AutoSize = true;
             labelHarga.BackColor = SystemColors.ActiveCaptionText;
-            labelHarga.Font = new Font("Poppins", 7F);
+            labelHarga.Font = new Font("Poppins", 8F);
             labelHarga.ForeColor = Color.White;
             labelHarga.Location = new Point(412, 334);
             labelHarga.Name = "labelHarga";
-            labelHarga.Size = new Size(35, 17);
+            labelHarga.Size = new Size(40, 19);
             labelHarga.TabIndex = 2;
             labelHarga.Text = "label1";
             // 
@@ -79,11 +80,11 @@ namespace EASYPAY.FormHslPbyr
             // 
             labelDate.AutoSize = true;
             labelDate.BackColor = SystemColors.ActiveCaptionText;
-            labelDate.Font = new Font("Poppins", 7F);
+            labelDate.Font = new Font("Poppins", 8F);
             labelDate.ForeColor = Color.White;
             labelDate.Location = new Point(412, 351);
             labelDate.Name = "labelDate";
-            labelDate.Size = new Size(35, 17);
+            labelDate.Size = new Size(40, 19);
             labelDate.TabIndex = 3;
             labelDate.Text = "label1";
             // 
@@ -97,12 +98,24 @@ namespace EASYPAY.FormHslPbyr
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // detail
+            // 
+            detail.ForeColor = Color.White;
+            detail.Location = new Point(271, 377);
+            detail.Name = "detail";
+            detail.Size = new Size(134, 23);
+            detail.TabIndex = 5;
+            detail.Text = "Check Detail Transaksi";
+            detail.UseVisualStyleBackColor = true;
+            detail.Click += detail_Click;
+            // 
             // Resi
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 500);
+            Controls.Add(detail);
             Controls.Add(labelDate);
             Controls.Add(labelHarga);
             Controls.Add(labelJP);
@@ -124,5 +137,6 @@ namespace EASYPAY.FormHslPbyr
         private Label labelHarga;
         private Label labelDate;
         private PictureBox pictureBox1;
+        private Button detail;
     }
 }

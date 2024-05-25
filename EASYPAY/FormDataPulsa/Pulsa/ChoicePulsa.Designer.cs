@@ -37,7 +37,6 @@
             btn250 = new Button();
             btn300 = new Button();
             checkBoxBalance = new CheckBox();
-            checkBoxSavings = new CheckBox();
             BtnConfirmBuy = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -138,20 +137,6 @@
             checkBoxBalance.UseVisualStyleBackColor = false;
             checkBoxBalance.CheckedChanged += checkBoxBalance_CheckedChanged;
             // 
-            // checkBoxSavings
-            // 
-            checkBoxSavings.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            checkBoxSavings.AutoSize = true;
-            checkBoxSavings.Font = new Font("Poppins", 8F);
-            checkBoxSavings.Location = new Point(304, 406);
-            checkBoxSavings.Name = "checkBoxSavings";
-            checkBoxSavings.Size = new Size(70, 23);
-            checkBoxSavings.TabIndex = 11;
-            checkBoxSavings.Text = "Savings";
-            checkBoxSavings.TextAlign = ContentAlignment.BottomLeft;
-            checkBoxSavings.UseVisualStyleBackColor = false;
-            checkBoxSavings.CheckedChanged += checkBoxSavings_CheckedChanged;
-            // 
             // BtnConfirmBuy
             // 
             BtnConfirmBuy.Location = new Point(226, 435);
@@ -169,7 +154,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
             Controls.Add(BtnConfirmBuy);
-            Controls.Add(checkBoxSavings);
             Controls.Add(checkBoxBalance);
             Controls.Add(btn300);
             Controls.Add(btn250);
@@ -196,7 +180,6 @@
         private Button btn250;
         private Button btn300;
         private CheckBox checkBoxBalance;
-        private CheckBox checkBoxSavings;
         private Button BtnConfirmBuy;
     }
 }

@@ -48,3 +48,7 @@ C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fend
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormDataPulsa.Pulsa.ChoicePulsa.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormDataPulsa.Data.CheckTipeNumber.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormDataPulsa.Data.ChoiceData.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormResi.DetailResi.DetailPln.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormWallet.walletView.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormResi.DetailResi.DetailPdam.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormResi.DetailResi.DetailPulsaData.resources

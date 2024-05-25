@@ -18,6 +18,8 @@ namespace EASYPAY
 {
     public partial class Dashboard : Form
     {
+        public static string namaUsers;
+        public static string saldoFormat;
         string db = SignIn.db;
         string id = SignIn.id_user;
         double saldo;
@@ -53,6 +55,7 @@ namespace EASYPAY
                 if (reader.Read())
                 {
                     labelNama.Text = reader.GetString(1);
+                    namaUsers = reader.GetString(1);
                     if (reader.IsDBNull(2) || string.IsNullOrEmpty(reader.GetString(2)))
                     {
                         labelEmail.Text = "Tidak ada email";
@@ -64,7 +67,7 @@ namespace EASYPAY
 
                     // convert digit 
                     saldo = reader.GetDouble(6);
-                    string saldoFormat = saldo.ToString("N0");
+                    saldoFormat = saldo.ToString("N0");
 
                     labelSaldo.Text = "Rp. " + saldoFormat;
                 }
@@ -110,6 +113,13 @@ namespace EASYPAY
             cn.Show();
             this.Hide();
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            FormWallet.walletView wallet = new FormWallet.walletView();
+            wallet.Show();
+            this.Hide();
         }
     }
 }

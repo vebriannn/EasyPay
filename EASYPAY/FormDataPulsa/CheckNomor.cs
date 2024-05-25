@@ -13,7 +13,7 @@ namespace EASYPAY.FormDataPulsa
     public partial class CheckNomor : Form
     {
 
-        private string nomorTujuan = "";
+        public static string nomorTujuan = "";
 
         public CheckNomor()
         {

@@ -35,7 +35,6 @@
             Btn150 = new Button();
             Btn300 = new Button();
             checkBoxBalance = new CheckBox();
-            checkBoxSavings = new CheckBox();
             BtnConfirmBuy = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -113,20 +112,6 @@
             checkBoxBalance.UseVisualStyleBackColor = false;
             checkBoxBalance.CheckedChanged += checkBoxBalance_CheckedChanged;
             // 
-            // checkBoxSavings
-            // 
-            checkBoxSavings.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            checkBoxSavings.AutoSize = true;
-            checkBoxSavings.Font = new Font("Poppins", 8F);
-            checkBoxSavings.Location = new Point(312, 399);
-            checkBoxSavings.Name = "checkBoxSavings";
-            checkBoxSavings.Size = new Size(70, 23);
-            checkBoxSavings.TabIndex = 8;
-            checkBoxSavings.Text = "Savings";
-            checkBoxSavings.TextAlign = ContentAlignment.BottomLeft;
-            checkBoxSavings.UseVisualStyleBackColor = false;
-            checkBoxSavings.CheckedChanged += checkBoxSavings_CheckedChanged;
-            // 
             // BtnConfirmBuy
             // 
             BtnConfirmBuy.Location = new Point(234, 428);
@@ -138,20 +123,19 @@
             BtnConfirmBuy.Visible = false;
             BtnConfirmBuy.Click += BtnConfirmBuy_Click;
             // 
-            // Buy
+            // BuyTokenPln
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
             Controls.Add(BtnConfirmBuy);
-            Controls.Add(checkBoxSavings);
             Controls.Add(checkBoxBalance);
             Controls.Add(Btn300);
             Controls.Add(Btn150);
             Controls.Add(Btn50);
             Controls.Add(labelNomor);
             Controls.Add(pictureBox1);
-            Name = "Buy";
+            Name = "BuyTokenPln";
             Text = "BuyTokenListrik";
             Load += Buy_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -167,7 +151,6 @@
         private Button Btn150;
         private Button Btn300;
         private CheckBox checkBoxBalance;
-        private CheckBox checkBoxSavings;
         private Button BtnConfirmBuy;
     }
 }

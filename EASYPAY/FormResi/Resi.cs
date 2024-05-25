@@ -17,6 +17,7 @@ namespace EASYPAY.FormHslPbyr
     {
         string db = SignIn.db;
         string no_transaksi;
+        string jenis_pembelian;
 
         MySqlConnection connection;
 
@@ -28,9 +29,13 @@ namespace EASYPAY.FormHslPbyr
 
         private void Resi_Load(object sender, EventArgs e)
         {
+            detail.FlatStyle = FlatStyle.Flat;
+            detail.FlatAppearance.BorderSize = 0;
+
             labelNoTrx.BackColor = ColorTranslator.FromHtml("#41A6F4");
-;           labelJP.BackColor = ColorTranslator.FromHtml("#41A6F4");
+            labelJP.BackColor = ColorTranslator.FromHtml("#41A6F4");
             labelHarga.BackColor = ColorTranslator.FromHtml("#41A6F4");
+            detail.BackColor = ColorTranslator.FromHtml("#41A6F4");
             labelDate.BackColor = ColorTranslator.FromHtml("#41A6F4");
             checkTransaksi();
         }
@@ -48,10 +53,11 @@ namespace EASYPAY.FormHslPbyr
                 {
                     string saldoFormat = reader.GetDouble(4).ToString("N0");
 
-                    labelNoTrx.Text = reader.GetString(2);
+                    labelNoTrx.Text = reader.GetString(2).ToUpper();
                     labelJP.Text = reader.GetString(3).ToUpper();
                     labelHarga.Text = "Rp. " + saldoFormat;
                     labelDate.Text = reader.GetDateTime(5).ToString();
+                    jenis_pembelian = reader.GetString(3);
                 }
                 else
                 {
@@ -65,6 +71,28 @@ namespace EASYPAY.FormHslPbyr
             finally
             {
                 connection.Close();
+            }
+        }
+
+        private void detail_Click(object sender, EventArgs e)
+        {
+            if(jenis_pembelian == "pln")
+            {
+                FormResi.DetailResi.DetailPln dp = new FormResi.DetailResi.DetailPln(no_transaksi);
+                dp.Show();
+                this.Hide();
+            }
+            else if(jenis_pembelian == "pdam")
+            {
+                FormResi.DetailResi.DetailPdam dp = new FormResi.DetailResi.DetailPdam(no_transaksi);
+                dp.Show();
+                this.Hide();
+            }
+            else if(jenis_pembelian == "pulsa" || jenis_pembelian == "data")
+            {
+                FormResi.DetailResi.DetailPulsaData dp = new FormResi.DetailResi.DetailPulsaData(no_transaksi);
+                dp.Show();
+                this.Hide();
             }
         }
     }

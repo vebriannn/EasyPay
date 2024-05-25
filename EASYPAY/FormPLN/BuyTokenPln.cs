@@ -49,7 +49,6 @@ namespace EASYPAY.FormPLN
             labelNomor.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             checkBoxBalance.BackColor = ColorTranslator.FromHtml("#BBDEFA");
-            checkBoxSavings.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             BtnConfirmBuy.Visible = false;
 
@@ -62,47 +61,35 @@ namespace EASYPAY.FormPLN
         private void Btn50_Click(object sender, EventArgs e)
         {
             pilihHarga = 52000;
-            MessageBox.Show("Token Listrik Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            MessageBox.Show("Token Listrik Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void Btn150_Click(object sender, EventArgs e)
         {
             pilihHarga = 152000;
-            MessageBox.Show("Token Listrik Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            MessageBox.Show("Token Listrik Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void Btn300_Click(object sender, EventArgs e)
         {
             pilihHarga = 250000;
-            MessageBox.Show("Token Listrik Dengan Harga " + pilihHarga + " Berhasil Di Pilih");
+            MessageBox.Show("Token Listrik Dengan Harga " + pilihHarga.ToString("N0") + " Berhasil Di Pilih");
             checkBtnBuy();
         }
 
         private void checkBoxBalance_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxSavings.Checked == true)
-            {
-                checkBoxSavings.Checked = false;
-            }
             methodBayar = "Wallet";
             checkBtnBuy();
         }
 
-        private void checkBoxSavings_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxBalance.Checked == true)
-            {
-                checkBoxBalance.Checked = false;
-            }
-            methodBayar = "Savings";
-            checkBtnBuy();
-        }
+ 
 
         public void checkBtnBuy()
         {
-            if (pilihHarga != 0 && methodBayar == "Wallet" || methodBayar == "Savings")
+            if (pilihHarga != 0 && methodBayar == "Wallet")
             {
                 BtnConfirmBuy.Visible = true;
             }
@@ -120,16 +107,13 @@ namespace EASYPAY.FormPLN
         private void checkSaldo()
         {
             double saldo = 0;
+            connection = new MySqlConnection(db);
+
 
             if (methodBayar == "Wallet")
             {
                 column = "saldo_wallet";
             }
-            else if (methodBayar == "Savings")
-            {
-                column = "saldo_savings";
-            }
-            connection = new MySqlConnection(db);
 
             try
             {
@@ -161,25 +145,12 @@ namespace EASYPAY.FormPLN
             {
                 UpdatedUsers updatedUsers = new UpdatedUsers();
                 updatedUsers.updateSaldo(column, sisaSaldo, "pln", pilihHarga);
+                this.Close();
 
             }
             else
             {
                 MessageBox.Show($"Maaf Saldo {methodBayar} Tidak Mencukupi, Untuk Melanjutkan Transaksi");
-            }
-        }
-
-       
-        private void GenerateToken()
-        {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            var random = new Random();
-            var stringBuilder = new StringBuilder(20);
-
-            // Menghasilkan string acak dengan panjang tertentu
-            for (int i = 0; i < 20; i++)
-            {
-                stringBuilder.Append(chars[random.Next(chars.Length)]);
             }
         }
 

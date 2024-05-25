@@ -31,13 +31,13 @@ namespace EASYPAY.FormPLN
 
         private void BtnCheckReg_Click(object sender, EventArgs e)
         {
-            if (textCheckNomor.Text.ToString().Length < 11 && textCheckNomor.Text.ToString().Length > 12)
+            if (textCheckNomor.Text.ToString().Length != 11)
             {
-                MessageBox.Show("ID Meteran Harus 11 Digit!!");
+                MessageBox.Show("ID Meteran Tidak Boleh Lebih Dan Kurang Dari 11 Digit ");
             }
             else
             {
-                MessageBox.Show("ID Meteran Valid!");
+                MessageBox.Show("ID Meteran Valid");
                 IDMeteran = textCheckNomor.Text.ToString();
                 BuyTokenPln fbp = new BuyTokenPln();
                 fbp.Show();

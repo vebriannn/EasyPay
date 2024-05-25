@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChoiceData));
             pictureBox1 = new PictureBox();
             checkBoxBalance = new CheckBox();
-            checkBoxSavings = new CheckBox();
             BtnConfirmBuy = new Button();
             btn225 = new Button();
             btn100 = new Button();
@@ -65,20 +64,6 @@
             checkBoxBalance.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxBalance.UseVisualStyleBackColor = false;
             checkBoxBalance.CheckedChanged += checkBoxBalance_CheckedChanged;
-            // 
-            // checkBoxSavings
-            // 
-            checkBoxSavings.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            checkBoxSavings.AutoSize = true;
-            checkBoxSavings.Font = new Font("Poppins", 8F);
-            checkBoxSavings.Location = new Point(302, 405);
-            checkBoxSavings.Name = "checkBoxSavings";
-            checkBoxSavings.Size = new Size(70, 23);
-            checkBoxSavings.TabIndex = 12;
-            checkBoxSavings.Text = "Savings";
-            checkBoxSavings.TextAlign = ContentAlignment.BottomLeft;
-            checkBoxSavings.UseVisualStyleBackColor = false;
-            checkBoxSavings.CheckedChanged += checkBoxSavings_CheckedChanged;
             // 
             // BtnConfirmBuy
             // 
@@ -175,7 +160,6 @@
             Controls.Add(btn100);
             Controls.Add(btn225);
             Controls.Add(BtnConfirmBuy);
-            Controls.Add(checkBoxSavings);
             Controls.Add(checkBoxBalance);
             Controls.Add(pictureBox1);
             Name = "ChoiceData";
@@ -190,7 +174,6 @@
 
         private PictureBox pictureBox1;
         private CheckBox checkBoxBalance;
-        private CheckBox checkBoxSavings;
         private Button BtnConfirmBuy;
         private Button btn225;
         private Button btn100;
