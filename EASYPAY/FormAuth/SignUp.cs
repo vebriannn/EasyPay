@@ -15,7 +15,9 @@ namespace EASYPAY.FormAuth
     {
 
         string db = SignIn.db;
+        string jenis_kelamin = "";
         MySqlConnection connection;
+
 
         public SignUp()
         {
@@ -32,13 +34,14 @@ namespace EASYPAY.FormAuth
 
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
-            if (textCreateNama.Text.ToString() == "" && textCreateEmail.Text.ToString() == "" && textCreateNomor.Text.ToString() == "" && textCreatePin.Text.ToString() == "")
+            MessageBox.Show(jenis_kelamin);
+            if (textCreateNama.Text.ToString() == "" && jenis_kelamin == "" && textCreateNomor.Text.ToString() == "" && textCreatePin.Text.ToString() == "")
             {
                 MessageBox.Show("Maaf Input Tidak Boleh Kosong, Mohon Isi Semua Data Pada Kolom Input!!!");
             }
             else
             {
-                if(textCreatePin.Text.ToString() == textKonfirmasiPin.Text.ToString())
+                if (textCreatePin.Text.ToString() == textKonfirmasiPin.Text.ToString())
                 {
                     connection = new MySqlConnection(db);
 
@@ -54,7 +57,7 @@ namespace EASYPAY.FormAuth
                         }
                         else
                         {
-                            ProsesCreateData(textCreateNama.Text.ToString(), textCreateEmail.Text.ToString(), textCreateNomor.Text.ToString(), textCreatePin.Text.ToString());
+                            ProsesCreateData(textCreateNama.Text.ToString(), jenis_kelamin, textCreateNomor.Text.ToString(), textCreatePin.Text.ToString());
                         }
                     }
                     catch (MySqlException ex)
@@ -73,14 +76,14 @@ namespace EASYPAY.FormAuth
             }
         }
 
-        public void ProsesCreateData(string nama, string email, string nomor, string pin)
+        public void ProsesCreateData(string nama, string gender, string nomor, string pin)
         {
             connection = new MySqlConnection(db);
 
             try
             {
                 connection.Open();
-                string queryInsert = $"INSERT INTO users (nama, email, nomor, pin) VALUES('{nama}', '{email}', '{nomor}', '{pin}') ";
+                string queryInsert = $"INSERT INTO users (nama, gender, nomor, pin) VALUES('{nama}', '{gender}', '{nomor}', '{pin}') ";
                 MySqlCommand command = new MySqlCommand(queryInsert, connection);
                 int execute = command.ExecuteNonQuery();
                 if (execute > 0)
@@ -105,5 +108,14 @@ namespace EASYPAY.FormAuth
             }
         }
 
+        private void radioPerempuan_CheckedChanged(object sender, EventArgs e)
+        {
+            jenis_kelamin = "perempuan";
+        }
+
+        private void radioPria_CheckedChanged(object sender, EventArgs e)
+        {
+            jenis_kelamin = "perempuan";
+        }
     }
 }

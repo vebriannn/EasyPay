@@ -1,6 +1,7 @@
 ﻿using EASYPAY.FormAir;
 using EASYPAY.FormAuth;
 using EASYPAY.FormDataPulsa;
+using EASYPAY.FormNetflix;
 using EASYPAY.FormPLN;
 using EASYPAY.profile;
 using MySql.Data.MySqlClient;
@@ -33,13 +34,11 @@ namespace EASYPAY
         private void Dashboard_Load(object sender, EventArgs e)
         {
             labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
-            labelEmail.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             labelSaldo.BackColor = ColorTranslator.FromHtml("#63B4F6");
             pictureDashboard.BackColor = ColorTranslator.FromHtml("#FFFFFF");
 
-            labelEmail.ForeColor = ColorTranslator.FromHtml("#625E5E");
-
             DashboardDB();
+            checkAktifitasKeuangan();
         }
 
 
@@ -56,14 +55,14 @@ namespace EASYPAY
                 {
                     labelNama.Text = reader.GetString(1);
                     namaUsers = reader.GetString(1);
-                    if (reader.IsDBNull(2) || string.IsNullOrEmpty(reader.GetString(2)))
-                    {
-                        labelEmail.Text = "Tidak ada email";
-                    }
-                    else
-                    {
-                        labelEmail.Text = reader.GetString(2);
-                    }
+                    // if (reader.IsDBNull(2) || string.IsNullOrEmpty(reader.GetString(2)))
+                    // {
+                    //     labelEmail.Text = "Tidak ada email";
+                    // }
+                    // else
+                    // {
+                    //     labelEmail.Text = reader.GetString(2);
+                    // }
 
                     // convert digit 
                     saldo = reader.GetDouble(6);
@@ -75,6 +74,41 @@ namespace EASYPAY
                 {
                     MessageBox.Show($"Error Users Tidak Terdaftar!");
                 }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error Mysql: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+
+        private void checkAktifitasKeuangan()
+        {
+            aktifitasDG.Rows.Clear();
+            string[] newRow = { "", "" };
+
+            DateTime year = DateTime.Now;
+            string tahun = year.ToString("yyyy");
+
+
+            connection = new MySqlConnection(db);
+            try
+            {
+                connection.Open();
+                string queryCheck = $"SELECT * FROM detail_aktifitas WHERE id_pengguna = '{id}' AND tahun = '{tahun}'";
+                MySqlCommand command = new MySqlCommand(queryCheck, connection);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    newRow[0] = !reader.IsDBNull(2) ? reader.GetDouble(2).ToString("N0") : "";
+                    newRow[1] = !reader.IsDBNull(3) ? reader.GetDouble(3).ToString("N0") : "";
+                    aktifitasDG.Rows.Add(newRow);
+                }
+
             }
             catch (MySqlException ex)
             {
@@ -119,6 +153,20 @@ namespace EASYPAY
         {
             FormWallet.walletView wallet = new FormWallet.walletView();
             wallet.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            ChoiceNetflix cn = new ChoiceNetflix();
+            cn.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            FormTransferBank.choiceBank cb = new FormTransferBank.choiceBank();
+            cb.Show();
             this.Hide();
         }
     }

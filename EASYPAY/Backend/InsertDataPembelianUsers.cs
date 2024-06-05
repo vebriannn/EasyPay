@@ -1,7 +1,9 @@
 ﻿using EASYPAY.FormAir;
 using EASYPAY.FormAuth;
 using EASYPAY.FormHslPbyr;
+using EASYPAY.FormNetflix;
 using EASYPAY.FormPLN;
+using EASYPAY.FormTransferBank;
 using MySql.Data.MySqlClient;
 using Mysqlx.Expr;
 using System;
@@ -21,6 +23,7 @@ namespace EASYPAY.Backend
         string meteranPln = CheckPln.IDMeteran;
         string meteranPdam = CheckWater.IDMeteran;
         string nomorHp = FormDataPulsa.CheckNomor.nomorTujuan;
+        string norek = FormTransferBank.Transfer.norek;
 
         string produk = "";
 
@@ -57,11 +60,49 @@ namespace EASYPAY.Backend
                     {
                         InsertDetailPembelianPulsaData(nomor_pembelian, jenis_pembelian);
                     }
+                    else if (jenis_pembelian == "netflix")
+                    {
+                        InsertDetailPembelianNetflix(nomor_pembelian, jenis_pembelian);
+                    }
                     else
                     {
                         Resi frtp = new Resi(nomor_pembelian);
                         frtp.Show();
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Gagal Menambahkan Data!!!");
+                }
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error Mysql: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public void InsertRiwayatTrxAtm(string nama, int totaltf)
+        {
+            connection = new MySqlConnection(db);
+            string kode_transfer = generateNomorTransaksi();
+
+            string tokenListrik = GenerateTokenListrik();
+
+            try
+            {
+                connection.Open();
+                string queryInsert = $"INSERT INTO riwayat_transfer(id_pengguna, kode_transfer, nama, bank_tujuan, no_rek, total_transfer, fee_admin) VALUES ('{id}','{kode_transfer}', '{nama}', '{choiceBank.namaBank}', '{norek}', '{totaltf}', '2500')";
+                MySqlCommand command = new MySqlCommand(queryInsert, connection);
+                int reader = command.ExecuteNonQuery();
+                if (reader > 0)
+                {
+                    FormResi.ResiTF rtf = new FormResi.ResiTF(nama, totaltf, DateTime.Now, "2500");
+                    rtf.Show();
                 }
                 else
                 {
@@ -159,6 +200,38 @@ namespace EASYPAY.Backend
             {
                 connection.Open();
                 string queryInsert = $"INSERT INTO detail_pulsa_data(nomor_pembelian, kategori_produk, nomor, produk, status) VALUES ('{nomor_pembelian}', '{jenis_pembelian}', '{nomorHp}','{produk}', 'Berhasil')";
+                MySqlCommand command = new MySqlCommand(queryInsert, connection);
+                int reader = command.ExecuteNonQuery();
+                if (reader > 0)
+                {
+                    Resi frtp = new Resi(nomor_pembelian);
+                    frtp.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Gagal Menambahkan Data!!!");
+                }
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error Mysql: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        private void InsertDetailPembelianNetflix(string nomor_pembelian, string jenis_pembelian)
+        {
+            connection = new MySqlConnection(db);
+
+            produk = ChoiceNetflix.produk;
+            try
+            {
+                connection.Open();
+                string queryInsert = $"INSERT INTO detail_netflix(nomor_pembelian, produk) VALUES ('{nomor_pembelian}', '{produk}')";
                 MySqlCommand command = new MySqlCommand(queryInsert, connection);
                 int reader = command.ExecuteNonQuery();
                 if (reader > 0)

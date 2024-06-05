@@ -33,7 +33,7 @@
             btnGanti = new Button();
             btnCancel = new Button();
             textNama = new TextBox();
-            textEmail = new TextBox();
+            textGender = new TextBox();
             textNomor = new TextBox();
             textPin = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -80,14 +80,14 @@
             textNama.Size = new Size(221, 18);
             textNama.TabIndex = 49;
             // 
-            // textEmail
+            // textGender
             // 
-            textEmail.BorderStyle = BorderStyle.None;
-            textEmail.Location = new Point(251, 179);
-            textEmail.Multiline = true;
-            textEmail.Name = "textEmail";
-            textEmail.Size = new Size(221, 18);
-            textEmail.TabIndex = 50;
+            textGender.BorderStyle = BorderStyle.None;
+            textGender.Location = new Point(251, 179);
+            textGender.Multiline = true;
+            textGender.Name = "textGender";
+            textGender.Size = new Size(221, 18);
+            textGender.TabIndex = 50;
             // 
             // textNomor
             // 
@@ -114,7 +114,7 @@
             ClientSize = new Size(800, 500);
             Controls.Add(textPin);
             Controls.Add(textNomor);
-            Controls.Add(textEmail);
+            Controls.Add(textGender);
             Controls.Add(textNama);
             Controls.Add(btnCancel);
             Controls.Add(btnGanti);
@@ -133,7 +133,7 @@
         private Button btnGanti;
         private Button btnCancel;
         private TextBox textNama;
-        private TextBox textEmail;
+        private TextBox textGender;
         private TextBox textNomor;
         private TextBox textPin;
     }

@@ -27,8 +27,16 @@ namespace EASYPAY.Backend
                 int reader = command.ExecuteNonQuery();
                 if (reader > 0)
                 {
-                    InsertDataPembelianUsers insertDP = new InsertDataPembelianUsers();
-                    insertDP.InsertRiwayatPembelian(jenis_pembelian, pilihHarga);
+                    if(jenis_pembelian == "tfbank")
+                    {
+                        InsertDataPembelianUsers insertDP = new InsertDataPembelianUsers();
+                        insertDP.InsertRiwayatTrxAtm("Almareta", pilihHarga);
+                    }
+                    else
+                    {
+                        InsertDataPembelianUsers insertDP = new InsertDataPembelianUsers();
+                        insertDP.InsertRiwayatPembelian(jenis_pembelian, pilihHarga);
+                    }
                 }
                 else
                 {

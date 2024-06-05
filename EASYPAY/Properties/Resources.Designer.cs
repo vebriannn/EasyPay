@@ -103,6 +103,16 @@ namespace EASYPAY.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Frame_502 {
+            get {
+                object obj = ResourceManager.GetObject("Frame 502", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hashtag {
             get {
                 object obj = ResourceManager.GetObject("hashtag", resourceCulture);

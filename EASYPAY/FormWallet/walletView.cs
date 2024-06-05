@@ -49,20 +49,13 @@ namespace EASYPAY.FormWallet
                 string queryCheck = $"SELECT * FROM riwayat_transaksi WHERE id_pengguna = '{id}'";
                 MySqlCommand command = new MySqlCommand(queryCheck, connection);
                 MySqlDataReader reader = command.ExecuteReader();
-                if (reader.Read())
+                while (reader.Read())
                 {
-                    while (reader.Read())
-                    {
-                        newRow[0] = reader.GetString(2);
-                        newRow[1] = reader.GetString(3);
-                        newRow[2] = reader.GetDouble(4).ToString();
-                        newRow[3] = reader.GetDateTime(5).ToString();
-                        historyDG.Rows.Add(newRow);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show($"Maaf Data Tidak Ada!!!");
+                    newRow[0] = reader.GetString(2);
+                    newRow[1] = reader.GetString(3);
+                    newRow[2] = reader.GetDouble(4).ToString("N0");
+                    newRow[3] = reader.GetDateTime(5).ToString();
+                    historyDG.Rows.Add(newRow);
                 }
             }
             catch (MySqlException ex)

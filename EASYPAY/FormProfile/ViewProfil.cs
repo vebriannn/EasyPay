@@ -19,7 +19,7 @@ namespace EASYPAY.profile
         string id = SignIn.id_user;
 
         public static string namaUser;
-        public static string emailUser;
+        public static string GenderUser;
         public static string nomorUser;
         public static string pinUser;
 
@@ -34,8 +34,6 @@ namespace EASYPAY.profile
         {
             GetDataDB();
             labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
-            labelEmail.BackColor = ColorTranslator.FromHtml("#BBDEFA");
-            labelEmail.ForeColor = ColorTranslator.FromHtml("#625E5E");
             label1.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             label2.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             label3.BackColor = ColorTranslator.FromHtml("#BBDEFA");
@@ -53,8 +51,8 @@ namespace EASYPAY.profile
 
             if (label5.Text.ToString() == "premium")
             {
-                btnUpgrade.Text = "Terverifikasi";
-                btnUpgrade.Enabled = true;
+                btnUpgrade.Text = "Premium";
+                btnUpgrade.Enabled = false;
             }
             else
             {
@@ -75,22 +73,13 @@ namespace EASYPAY.profile
                 {
                     labelNama.Text = reader.GetString(1);
                     label1.Text = reader.GetString(1);
-                    if (reader.IsDBNull(2) || string.IsNullOrEmpty(reader.GetString(2)))
-                    {
-                        labelEmail.Text = "Tidak ada email";
-                        label2.Text = "Tidak ada email";
-                    }
-                    else
-                    {
-                        labelEmail.Text = reader.GetString(2);
-                        label2.Text = reader.GetString(2);
-                    }
+                    label2.Text = reader.GetString(2);
                     label3.Text = reader.GetString(3);
                     label4.Text = reader.GetString(4);
                     label5.Text = reader.GetString(5);
 
                     namaUser = reader.GetString(1);
-                    emailUser = reader.GetString(2);
+                    GenderUser = reader.GetString(2);
                     nomorUser = reader.GetString(3);
                     pinUser = reader.GetString(4);
 
@@ -114,6 +103,13 @@ namespace EASYPAY.profile
         {
             EditProfile ep = new EditProfile();
             ep.Show();
+            this.Hide();
+        }
+
+        private void btnUpgrade_Click(object sender, EventArgs e)
+        {
+            premiumAkun pa = new premiumAkun();
+            pa.Show();
             this.Hide();
         }
     }

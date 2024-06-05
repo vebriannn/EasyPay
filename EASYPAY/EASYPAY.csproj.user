@@ -31,7 +31,16 @@
     <Compile Update="FormDataPulsa\Pulsa\ChoicePulsa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormNetflix\ChoiceNetflix.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormProfile\EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProfile\premiumAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormResi\DetailResi\DetailNetflix.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormResi\DetailResi\DetailPdam.cs">
@@ -52,6 +61,15 @@
     <Compile Update="FormPLN\BuyTokenPln.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormResi\ResiTF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTransferBank\choiceBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTransferBank\Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormWallet\walletView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,9 +77,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormPLN\CheckPln.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Profile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormProfile\ViewProfil.cs">

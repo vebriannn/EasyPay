@@ -20,8 +20,11 @@ namespace EASYPAY.FormProfile
         string db = SignIn.db;
         string user_id = SignIn.id_user;
 
+        string columnNama = "";
+        string columnNomor = "";
+
         string namaUser = ViewProfil.namaUser;
-        string emailUser = ViewProfil.emailUser;
+        string GenderUser = ViewProfil.GenderUser;
         string nomorUser = ViewProfil.nomorUser;
         string pinUser = ViewProfil.pinUser;
 
@@ -42,12 +45,12 @@ namespace EASYPAY.FormProfile
             btnCancel.FlatAppearance.BorderSize = 0;
             btnCancel.BackColor = ColorTranslator.FromHtml("#41A6F4");
             textNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
-            textEmail.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            textGender.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             textNomor.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             textPin.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             textNama.Text = namaUser;
-            textEmail.Text = emailUser;
+            textGender.Text = GenderUser;
             textNomor.Text = nomorUser;
             textPin.Text = pinUser;
 
@@ -56,21 +59,64 @@ namespace EASYPAY.FormProfile
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Anda Akan Di Arahkan Ke Dashboard");
-            Dashboard dd = new Dashboard();
-            dd.Show();
+            ViewProfil vp = new ViewProfil();
+            vp.Show();
             this.Hide();
         }
 
         private void btnGanti_Click(object sender, EventArgs e)
         {
-            if(textNama.Text.ToString() != "" && textEmail.Text.ToString() != "" && textNomor.Text.ToString() != "" && textPin.Text.ToString() != "")
+            if(textNama.Text.ToString() != "" && textNomor.Text.ToString() != "" && textPin.Text.ToString() != "")
             {
-                GantiDataDiri();
+                if(namaUser != textNama.Text.ToString())
+                {
+                    columnNama = $"nama = '{textNama.Text.ToString()}',";
+                }
+                else if (nomorUser != textNomor.Text.ToString())
+                {
+                    columnNomor = $"nomor = '{textNomor.Text.ToString()}',";
+                }
+
+                checkDataNomor();
             }
             else
             {
                 MessageBox.Show("Maaf Input Tidak Boleh Kosong, Mohon Isi Semua Data Pada Kolom Input!!!");
+            }
+        }
+
+        private void checkDataNomor()
+        {
+            if (nomorUser != textNomor.Text.ToString()) {
+                connection = new MySqlConnection(db);
+                try
+                {
+                    connection.Open();
+                    string queryCheck = $"SELECT COUNT(*) FROM users WHERE nomor = '{textNomor.Text.ToString()}'";
+                    MySqlCommand command = new MySqlCommand(queryCheck, connection);
+                    int rowsAffected = Convert.ToInt32(command.ExecuteScalar());
+                    if (rowsAffected == 1)
+                    {
+                        MessageBox.Show("Maaf, Nomor Sudah Di Pakai Akun Lain!!!");
+                        return;
+                    }
+                    else
+                    {
+                        GantiDataDiri();
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error Mysql: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            else
+            {
+                GantiDataDiri();
             }
         }
 
@@ -80,26 +126,17 @@ namespace EASYPAY.FormProfile
             connection = new MySqlConnection(db);
             try
             {
-                connection.Open();
-                string queryInsert = $"UPDATE users SET nama = '{textNama.Text.ToString()}', email = '{textEmail.Text.ToString()}', nomor = '{textNomor.Text.ToString()}', pin = '{textPin.Text.ToString()}' WHERE id = '{user_id}'";
+                connection.Open();  
+                string queryInsert = $"UPDATE users SET {columnNama} {columnNomor} pin = '{textPin.Text.ToString()}' WHERE id = '{user_id}'";
                 MySqlCommand command = new MySqlCommand(queryInsert, connection);
-                int execute = command.ExecuteNonQuery();
-                if (execute > 0)
+                int ex = command.ExecuteNonQuery();
+                if (ex > 0)
                 {
-                    DialogResult result = MessageBox.Show("Akun Berhasil Di Ubah, Apakah Anda Ingin Kembali Ke Menu Dashboard?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    MessageBox.Show("Akun Berhasil Di Ubah");
 
-                    if (result == DialogResult.Yes)
-                    {
-                        Dashboard dd = new Dashboard();
-                        dd.Show();
-                        this.Hide();
-                    }
-                    else if (result == DialogResult.No)
-                    {
-                        ViewProfil vp = new ViewProfil();
-                        vp.Show();
-                        this.Hide();
-                    }
+                    ViewProfil vp = new ViewProfil();
+                    vp.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -115,46 +152,6 @@ namespace EASYPAY.FormProfile
                 connection.Close();
             }
         }
-
-        private void checkData()
-        {
-            connection = new MySqlConnection(db);
-            try
-            {
-                connection.Open();
-                string queryCheck = $"SELECT * FROM users";
-                MySqlCommand command = new MySqlCommand(queryCheck, connection);
-                MySqlDataReader reader = command.ExecuteReader();
-                if (reader.Read())
-                {
-                    if(emailUser != reader.GetString(2))
-                    {
-                        MessageBox.Show("Maaf Anda Harus Pakai Email Lain, Email Tersebut Sudah Di Pakai Akun Lain...");
-                        if (nomorUser != reader.GetString(3))
-                        {
-                            MessageBox.Show("Maaf Anda Harus Pakai Nomor Lain, Nomor Tersebut Sudah Di Pakai Akun Lain...");
-                        }
-                        else
-                        {
-                            GantiDataDiri();
-                        }
-                    }
-                    else
-                    {
-                        GantiDataDiri();
-                    }
-                }
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error Mysql: " + ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-        }
-
        
     }
 }

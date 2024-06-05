@@ -94,6 +94,12 @@ namespace EASYPAY.FormHslPbyr
                 dp.Show();
                 this.Hide();
             }
+            else if (jenis_pembelian == "netflix")
+            {
+                FormResi.DetailResi.DetailNetflix dp = new FormResi.DetailResi.DetailNetflix(no_transaksi);
+                dp.Show();
+                this.Hide();
+            }
         }
     }
 }

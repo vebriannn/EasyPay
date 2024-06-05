@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            dataGridView1 = new DataGridView();
+            aktifitasDG = new DataGridView();
             Uang_keluar = new DataGridViewTextBoxColumn();
             Uang_Masuk = new DataGridViewTextBoxColumn();
-            labelEmail = new Label();
             labelNama = new Label();
             pictureBackground = new PictureBox();
             labelDashboard = new Label();
@@ -48,7 +47,8 @@
             pictureBox2 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            pictureBox4 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)aktifitasDG).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBackground).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -58,38 +58,27 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // aktifitasDG
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Uang_keluar, Uang_Masuk });
-            dataGridView1.Location = new Point(449, 258);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(240, 186);
-            dataGridView1.TabIndex = 63;
+            aktifitasDG.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            aktifitasDG.Columns.AddRange(new DataGridViewColumn[] { Uang_keluar, Uang_Masuk });
+            aktifitasDG.Location = new Point(449, 258);
+            aktifitasDG.Name = "aktifitasDG";
+            aktifitasDG.Size = new Size(240, 186);
+            aktifitasDG.TabIndex = 63;
             // 
             // Uang_keluar
             // 
-            Uang_keluar.HeaderText = "Uang Keluar";
+            Uang_keluar.HeaderText = "Uang Masuk";
             Uang_keluar.Name = "Uang_keluar";
             // 
             // Uang_Masuk
             // 
-            Uang_Masuk.HeaderText = "Uang Masuk";
+            Uang_Masuk.HeaderText = "Uang Keluar";
             Uang_Masuk.Name = "Uang_Masuk";
-            // 
-            // labelEmail
-            // 
-            labelEmail.AutoSize = true;
-            labelEmail.BackColor = Color.Transparent;
-            labelEmail.Font = new Font("Poppins", 5F);
-            labelEmail.ForeColor = Color.White;
-            labelEmail.Location = new Point(82, 124);
-            labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(93, 12);
-            labelEmail.TabIndex = 39;
-            labelEmail.Text = "maisecantik@gmail.com";
             // 
             // labelNama
             // 
@@ -97,7 +86,7 @@
             labelNama.BackColor = Color.Transparent;
             labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelNama.ForeColor = Color.Black;
-            labelNama.Location = new Point(80, 110);
+            labelNama.Location = new Point(80, 114);
             labelNama.Name = "labelNama";
             labelNama.Size = new Size(84, 19);
             labelNama.TabIndex = 38;
@@ -248,6 +237,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 77;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox7
             // 
@@ -260,11 +250,23 @@
             pictureBox7.TabStop = false;
             pictureBox7.Click += pictureBox7_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.icon__3_;
+            pictureBox4.Location = new Point(277, 148);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(34, 35);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 79;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(pictureBox4);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox2);
@@ -278,14 +280,13 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureDashboard);
             Controls.Add(pictureBox1);
-            Controls.Add(dataGridView1);
-            Controls.Add(labelEmail);
+            Controls.Add(aktifitasDG);
             Controls.Add(labelNama);
             Controls.Add(pictureBackground);
             Name = "Dashboard";
             Text = "FormDashboard";
             Load += Dashboard_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)aktifitasDG).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBackground).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -295,15 +296,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Uang_keluar;
-        private DataGridViewTextBoxColumn Uang_Masuk;
-        private Label labelEmail;
+        private DataGridView aktifitasDG;
         private Label labelNama;
         private PictureBox pictureBackground;
         private Label labelDashboard;
@@ -319,5 +318,8 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
+        private DataGridViewTextBoxColumn Uang_keluar;
+        private DataGridViewTextBoxColumn Uang_Masuk;
+        private PictureBox pictureBox4;
     }
 }

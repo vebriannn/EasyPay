@@ -1,4 +1,7 @@
 using EASYPAY.FormAir;
+using EASYPAY.FormNetflix;
+using EASYPAY.FormProfile;
+using EASYPAY.FormTransferBank;
 using EASYPAY.FormWallet;
 
 namespace EASYPAY

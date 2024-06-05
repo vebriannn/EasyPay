@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewProfil));
             pictureBox1 = new PictureBox();
-            labelEmail = new Label();
             labelNama = new Label();
             label1 = new Label();
             label2 = new Label();
@@ -52,25 +51,13 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // labelEmail
-            // 
-            labelEmail.AutoSize = true;
-            labelEmail.BackColor = Color.Transparent;
-            labelEmail.Font = new Font("Poppins", 5F);
-            labelEmail.ForeColor = Color.White;
-            labelEmail.Location = new Point(82, 124);
-            labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(93, 12);
-            labelEmail.TabIndex = 39;
-            labelEmail.Text = "maisecantik@gmail.com";
-            // 
             // labelNama
             // 
             labelNama.AutoSize = true;
             labelNama.BackColor = Color.Transparent;
             labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelNama.ForeColor = Color.Black;
-            labelNama.Location = new Point(80, 110);
+            labelNama.Location = new Point(85, 114);
             labelNama.Name = "labelNama";
             labelNama.Size = new Size(84, 19);
             labelNama.TabIndex = 38;
@@ -130,6 +117,7 @@
             btnUpgrade.TabIndex = 45;
             btnUpgrade.Text = "Upgrade";
             btnUpgrade.UseVisualStyleBackColor = true;
+            btnUpgrade.Click += btnUpgrade_Click;
             // 
             // btnEdit
             // 
@@ -154,7 +142,6 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(labelEmail);
             Controls.Add(labelNama);
             Controls.Add(pictureBox1);
             Name = "ViewProfil";
@@ -168,7 +155,6 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Label labelEmail;
         private Label labelNama;
         private Label label1;
         private Label label2;

@@ -36,6 +36,8 @@
             textCreateNomor = new TextBox();
             textCreatePin = new TextBox();
             textKonfirmasiPin = new TextBox();
+            radioPria = new RadioButton();
+            radioPerempuan = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -106,11 +108,37 @@
             textKonfirmasiPin.Size = new Size(249, 21);
             textKonfirmasiPin.TabIndex = 19;
             // 
+            // radioPria
+            // 
+            radioPria.AutoSize = true;
+            radioPria.Location = new Point(263, 180);
+            radioPria.Name = "radioPria";
+            radioPria.Size = new Size(45, 19);
+            radioPria.TabIndex = 20;
+            radioPria.TabStop = true;
+            radioPria.Text = "Pria";
+            radioPria.UseVisualStyleBackColor = true;
+            radioPria.CheckedChanged += radioPria_CheckedChanged;
+            // 
+            // radioPerempuan
+            // 
+            radioPerempuan.AutoSize = true;
+            radioPerempuan.Location = new Point(317, 180);
+            radioPerempuan.Name = "radioPerempuan";
+            radioPerempuan.Size = new Size(86, 19);
+            radioPerempuan.TabIndex = 21;
+            radioPerempuan.TabStop = true;
+            radioPerempuan.Text = "Perempuan";
+            radioPerempuan.UseVisualStyleBackColor = true;
+            radioPerempuan.CheckedChanged += radioPerempuan_CheckedChanged;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(radioPerempuan);
+            Controls.Add(radioPria);
             Controls.Add(textKonfirmasiPin);
             Controls.Add(textCreatePin);
             Controls.Add(textCreateNomor);
@@ -135,5 +163,7 @@
         private TextBox textCreateNomor;
         private TextBox textCreatePin;
         private TextBox textKonfirmasiPin;
+        private RadioButton radioPria;
+        private RadioButton radioPerempuan;
     }
 }
