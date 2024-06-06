@@ -34,6 +34,7 @@
             labelHarga = new Label();
             labelKP = new Label();
             labelP = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // labelNoTrx
@@ -96,6 +97,16 @@
             labelP.TabIndex = 14;
             labelP.Text = "label1";
             // 
+            // button1
+            // 
+            button1.Location = new Point(68, 437);
+            button1.Name = "button1";
+            button1.Size = new Size(157, 23);
+            button1.TabIndex = 15;
+            button1.Text = "Kembali ke Dashboard";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // DetailNetflix
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -103,6 +114,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 500);
+            Controls.Add(button1);
             Controls.Add(labelP);
             Controls.Add(labelKP);
             Controls.Add(labelHarga);
@@ -123,5 +135,6 @@
         private Label labelHarga;
         private Label labelKP;
         private Label labelP;
+        private Button button1;
     }
 }

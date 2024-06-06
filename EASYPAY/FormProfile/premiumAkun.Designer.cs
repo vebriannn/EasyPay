@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(premiumAkun));
             picture = new PictureBox();
             btnUpload = new Button();
+            labelNama = new Label();
+            labelTP = new Label();
             ((System.ComponentModel.ISupportInitialize)picture).BeginInit();
             SuspendLayout();
             // 
@@ -54,6 +56,30 @@
             btnUpload.UseVisualStyleBackColor = true;
             btnUpload.Click += btnUpload_Click;
             // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.BackColor = Color.Transparent;
+            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = Color.Black;
+            labelNama.Location = new Point(84, 108);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(84, 19);
+            labelNama.TabIndex = 54;
+            labelNama.Text = "Maise Ivena L.";
+            // 
+            // labelTP
+            // 
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(86, 122);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 84;
+            labelTP.Text = "Maise Ivena L.";
+            // 
             // premiumAkun
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -61,6 +87,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 500);
+            Controls.Add(labelTP);
+            Controls.Add(labelNama);
             Controls.Add(btnUpload);
             Controls.Add(picture);
             DoubleBuffered = true;
@@ -69,11 +97,14 @@
             Load += premiumAkun_Load;
             ((System.ComponentModel.ISupportInitialize)picture).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox picture;
         private Button btnUpload;
+        private Label labelNama;
+        private Label labelTP;
     }
 }

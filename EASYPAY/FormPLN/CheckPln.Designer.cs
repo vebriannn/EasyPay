@@ -32,6 +32,8 @@
             pictureBox1 = new PictureBox();
             textCheckNomor = new TextBox();
             BtnCheckReg = new Button();
+            labelNama = new Label();
+            labelTP = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -65,11 +67,37 @@
             BtnCheckReg.UseVisualStyleBackColor = true;
             BtnCheckReg.Click += BtnCheckReg_Click;
             // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.BackColor = Color.Transparent;
+            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = Color.Black;
+            labelNama.Location = new Point(81, 110);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(84, 19);
+            labelNama.TabIndex = 40;
+            labelNama.Text = "Maise Ivena L.";
+            // 
+            // labelTP
+            // 
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(83, 124);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 83;
+            labelTP.Text = "Maise Ivena L.";
+            // 
             // CheckPln
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(labelTP);
+            Controls.Add(labelNama);
             Controls.Add(BtnCheckReg);
             Controls.Add(textCheckNomor);
             Controls.Add(pictureBox1);
@@ -86,5 +114,7 @@
         private PictureBox pictureBox1;
         private TextBox textCheckNomor;
         private Button BtnCheckReg;
+        private Label labelNama;
+        private Label labelTP;
     }
 }

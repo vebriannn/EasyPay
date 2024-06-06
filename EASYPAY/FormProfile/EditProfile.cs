@@ -28,6 +28,8 @@ namespace EASYPAY.FormProfile
         string nomorUser = ViewProfil.nomorUser;
         string pinUser = ViewProfil.pinUser;
 
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
         MySqlConnection connection;
 
         public EditProfile()
@@ -53,6 +55,13 @@ namespace EASYPAY.FormProfile
             textGender.Text = GenderUser;
             textNomor.Text = nomorUser;
             textPin.Text = pinUser;
+
+            labelNama.Text = namaUser;
+            labelTP.Text = tipe_pengguna;
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+
 
 
         }

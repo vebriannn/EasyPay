@@ -34,7 +34,6 @@ namespace EASYPAY.FormAuth
 
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(jenis_kelamin);
             if (textCreateNama.Text.ToString() == "" && jenis_kelamin == "" && textCreateNomor.Text.ToString() == "" && textCreatePin.Text.ToString() == "")
             {
                 MessageBox.Show("Maaf Input Tidak Boleh Kosong, Mohon Isi Semua Data Pada Kolom Input!!!");
@@ -115,7 +114,7 @@ namespace EASYPAY.FormAuth
 
         private void radioPria_CheckedChanged(object sender, EventArgs e)
         {
-            jenis_kelamin = "perempuan";
+            jenis_kelamin = "pria";
         }
     }
 }

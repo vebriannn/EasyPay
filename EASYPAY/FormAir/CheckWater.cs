@@ -14,6 +14,12 @@ namespace EASYPAY.FormAir
     public partial class CheckWater : Form
     {
         public static string IDMeteran;
+
+
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
+
         public CheckWater()
         {
             InitializeComponent();
@@ -28,6 +34,12 @@ namespace EASYPAY.FormAir
 
             BtnCheckReg.BackColor = ColorTranslator.FromHtml("#41A6F4");
             BtnCheckReg.ForeColor = ColorTranslator.FromHtml("#FFF");
+
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
         }
 
         private void BtnCheckReg_Click(object sender, EventArgs e)

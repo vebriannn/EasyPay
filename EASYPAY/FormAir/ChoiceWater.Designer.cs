@@ -35,6 +35,8 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            labelNama = new Label();
+            labelTP = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -98,11 +100,37 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.BackColor = Color.Transparent;
+            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = Color.Black;
+            labelNama.Location = new Point(89, 109);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(84, 19);
+            labelNama.TabIndex = 41;
+            labelNama.Text = "Maise Ivena L.";
+            // 
+            // labelTP
+            // 
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(90, 124);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 84;
+            labelTP.Text = "Maise Ivena L.";
+            // 
             // ChoiceWater
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(labelTP);
+            Controls.Add(labelNama);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -114,6 +142,7 @@
             Load += ChoiceWater_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -124,5 +153,7 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Label labelNama;
+        private Label labelTP;
     }
 }

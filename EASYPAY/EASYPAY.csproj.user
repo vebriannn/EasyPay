@@ -52,6 +52,9 @@
     <Compile Update="FormResi\DetailResi\DetailPulsaData.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormResi\FormTopupBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormResi\Resi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,10 +67,31 @@
     <Compile Update="FormResi\ResiTF.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormTopup\Alfaindo\AlfamartTopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTopup\Alfaindo\bayar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTopup\Alfaindo\IndomartTopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTopup\Bank\bayar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTopup\choiceMetode.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormTransferBank\choiceBank.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormTransferBank\Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTransferEasyPay\Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTransferEasyPay\Transfer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormWallet\walletView.cs">

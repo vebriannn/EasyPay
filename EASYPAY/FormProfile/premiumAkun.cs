@@ -20,6 +20,8 @@ namespace EASYPAY.FormProfile
         string imageLocation = "";
         string db = SignIn.db;
         string id = SignIn.id_user;
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
 
         MySqlConnection connection;
 
@@ -31,6 +33,16 @@ namespace EASYPAY.FormProfile
         private void premiumAkun_Load(object sender, EventArgs e)
         {
             picture.BackColor = ColorTranslator.FromHtml("#F9F5FE");
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+
+            btnUpload.BackColor = ColorTranslator.FromHtml("#41A6F4");
+            btnUpload.FlatStyle = FlatStyle.Flat;
+            btnUpload.FlatAppearance.BorderSize = 0;
+            btnUpload.ForeColor = Color.White;
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
         }
 
         private void btnUpload_Click(object sender, EventArgs e)

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewProfil));
             pictureBox1 = new PictureBox();
-            labelNama = new Label();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -38,6 +37,11 @@
             label5 = new Label();
             btnUpgrade = new Button();
             btnEdit = new Button();
+            labelNama = new Label();
+            labelTP = new Label();
+            labelprofile = new Label();
+            labelDashboard = new Label();
+            labelEwallet = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -50,18 +54,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // labelNama
-            // 
-            labelNama.AutoSize = true;
-            labelNama.BackColor = Color.Transparent;
-            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelNama.ForeColor = Color.Black;
-            labelNama.Location = new Point(85, 114);
-            labelNama.Name = "labelNama";
-            labelNama.Size = new Size(84, 19);
-            labelNama.TabIndex = 38;
-            labelNama.Text = "Maise Ivena L.";
             // 
             // label1
             // 
@@ -130,11 +122,72 @@
             btnEdit.UseVisualStyleBackColor = true;
             btnEdit.Click += btnEdit_Click;
             // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.BackColor = Color.Transparent;
+            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = Color.Black;
+            labelNama.Location = new Point(83, 112);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(84, 19);
+            labelNama.TabIndex = 47;
+            labelNama.Text = "Maise Ivena L.";
+            // 
+            // labelTP
+            // 
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(85, 128);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 83;
+            labelTP.Text = "Maise Ivena L.";
+            // 
+            // labelprofile
+            // 
+            labelprofile.AutoSize = true;
+            labelprofile.BackColor = Color.Transparent;
+            labelprofile.Location = new Point(86, 156);
+            labelprofile.Name = "labelprofile";
+            labelprofile.Size = new Size(41, 15);
+            labelprofile.TabIndex = 91;
+            labelprofile.Text = "Profile";
+            // 
+            // labelDashboard
+            // 
+            labelDashboard.AutoSize = true;
+            labelDashboard.BackColor = Color.Transparent;
+            labelDashboard.Location = new Point(86, 181);
+            labelDashboard.Name = "labelDashboard";
+            labelDashboard.Size = new Size(64, 15);
+            labelDashboard.TabIndex = 92;
+            labelDashboard.Text = "Dashboard";
+            labelDashboard.Click += labelDashboard_Click;
+            // 
+            // labelEwallet
+            // 
+            labelEwallet.AutoSize = true;
+            labelEwallet.BackColor = Color.Transparent;
+            labelEwallet.Location = new Point(87, 210);
+            labelEwallet.Name = "labelEwallet";
+            labelEwallet.Size = new Size(40, 15);
+            labelEwallet.TabIndex = 93;
+            labelEwallet.Text = "Wallet";
+            labelEwallet.Click += labelEwallet_Click;
+            // 
             // ViewProfil
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(labelEwallet);
+            Controls.Add(labelDashboard);
+            Controls.Add(labelprofile);
+            Controls.Add(labelTP);
+            Controls.Add(labelNama);
             Controls.Add(btnEdit);
             Controls.Add(btnUpgrade);
             Controls.Add(label5);
@@ -142,7 +195,6 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(labelNama);
             Controls.Add(pictureBox1);
             Name = "ViewProfil";
             Text = "ViewProfil";
@@ -155,7 +207,7 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Label labelNama;
+
         private Label label1;
         private Label label2;
         private Label label3;
@@ -163,5 +215,10 @@
         private Label label5;
         private Button btnUpgrade;
         private Button btnEdit;
+        private Label labelNama;
+        private Label labelTP;
+        private Label labelprofile;
+        private Label labelDashboard;
+        private Label labelEwallet;
     }
 }

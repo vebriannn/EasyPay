@@ -22,6 +22,9 @@ namespace EASYPAY.FormTransferBank
         string id = SignIn.id_user;
         private double sisaSaldo = 0;
 
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
         MySqlConnection connection;
         public Transfer()
         {
@@ -41,6 +44,12 @@ namespace EASYPAY.FormTransferBank
             btnTranfer.ForeColor = Color.White;
             btnTranfer.FlatStyle = FlatStyle.Flat;
             btnTranfer.FlatAppearance.BorderSize = 0;
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
+
 
         }
 

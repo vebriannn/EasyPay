@@ -29,8 +29,8 @@ namespace EASYPAY.Backend
                 {
                     if(jenis_pembelian == "tfbank")
                     {
-                        InsertDataPembelianUsers insertDP = new InsertDataPembelianUsers();
-                        insertDP.InsertRiwayatTrxAtm("Almareta", pilihHarga);
+                        FormResi.ResiTF rtf = new FormResi.ResiTF("Almareta", pilihHarga, DateTime.Now, "2500");
+                        rtf.Show();
                     }
                     else
                     {

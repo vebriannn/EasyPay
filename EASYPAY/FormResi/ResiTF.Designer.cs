@@ -33,6 +33,7 @@
             labelAmount = new Label();
             labelDate = new Label();
             labelFee = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // labelSend
@@ -83,6 +84,16 @@
             labelFee.TabIndex = 4;
             labelFee.Text = "label1";
             // 
+            // button1
+            // 
+            button1.Location = new Point(61, 434);
+            button1.Name = "button1";
+            button1.Size = new Size(157, 23);
+            button1.TabIndex = 5;
+            button1.Text = "Kembali ke Dashboard";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // ResiTF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -90,6 +101,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 500);
+            Controls.Add(button1);
             Controls.Add(labelFee);
             Controls.Add(labelDate);
             Controls.Add(labelAmount);
@@ -108,5 +120,6 @@
         private Label labelAmount;
         private Label labelDate;
         private Label labelFee;
+        private Button button1;
     }
 }

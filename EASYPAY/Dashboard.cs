@@ -23,7 +23,9 @@ namespace EASYPAY
         public static string saldoFormat;
         string db = SignIn.db;
         string id = SignIn.id_user;
-        double saldo;
+        public static double saldo;
+        public static string nomor;
+        public static string tipe_pengguna;
 
         MySqlConnection connection;
         public Dashboard()
@@ -35,7 +37,19 @@ namespace EASYPAY
         {
             labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             labelSaldo.BackColor = ColorTranslator.FromHtml("#63B4F6");
-            pictureDashboard.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelprofile.BackColor = Color.Transparent;
+            labelDashboard.BackColor = Color.Transparent;
+            labelDashboard.ForeColor = ColorTranslator.FromHtml("#1F94F3");
+            labelEwallet.BackColor = Color.Transparent;
+
+            labelPln.BackColor = Color.Transparent;
+            labelAir.BackColor = Color.Transparent;
+            labelNetflix.BackColor = Color.Transparent;
+            labelPulsaData.BackColor = Color.Transparent;
+            labelTfBank.BackColor = Color.Transparent;
+            labelIsiSaldo.BackColor = Color.Transparent;
+            labelPayment.BackColor = Color.Transparent;
 
             DashboardDB();
             checkAktifitasKeuangan();
@@ -65,8 +79,13 @@ namespace EASYPAY
                     // }
 
                     // convert digit 
+
                     saldo = reader.GetDouble(6);
+                    nomor = reader.GetString(3);
                     saldoFormat = saldo.ToString("N0");
+                    tipe_pengguna = reader.GetString(5);
+
+                    labelTP.Text = tipe_pengguna;
 
                     labelSaldo.Text = "Rp. " + saldoFormat;
                 }
@@ -120,13 +139,6 @@ namespace EASYPAY
             }
         }
 
-        private void pictureListrik_Click(object sender, EventArgs e)
-        {
-            CheckPln cp = new CheckPln();
-            cp.Show();
-            this.Hide();
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
             ViewProfil vp = new ViewProfil();
@@ -141,13 +153,7 @@ namespace EASYPAY
             this.Hide();
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            FormDataPulsa.CheckNomor cn = new FormDataPulsa.CheckNomor();
-            cn.Show();
-            this.Hide();
 
-        }
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -156,17 +162,67 @@ namespace EASYPAY
             this.Hide();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+
+        private void labelPln_Click(object sender, EventArgs e)
+        {
+            CheckPln cp = new CheckPln();
+            cp.Show();
+            this.Hide();
+        }
+
+        private void labelAir_Click(object sender, EventArgs e)
+        {
+            ChoiceWater choice = new ChoiceWater();
+            choice.Show();
+            this.Hide();
+        }
+
+        private void labelNetflix_Click(object sender, EventArgs e)
         {
             ChoiceNetflix cn = new ChoiceNetflix();
             cn.Show();
             this.Hide();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void labelPulsaData_Click(object sender, EventArgs e)
+        {
+            FormDataPulsa.CheckNomor cn = new FormDataPulsa.CheckNomor();
+            cn.Show();
+            this.Hide();
+        }
+
+        private void labelTfBank_Click(object sender, EventArgs e)
         {
             FormTransferBank.choiceBank cb = new FormTransferBank.choiceBank();
             cb.Show();
+            this.Hide();
+        }
+
+        private void labelIsiSaldo_Click(object sender, EventArgs e)
+        {
+            FormTopup.choiceMetode cm = new FormTopup.choiceMetode();
+            cm.Show();
+            this.Hide();
+        }
+
+        private void labelPayment_Click(object sender, EventArgs e)
+        {
+            FormTransferEasyPay.Transfer tf = new FormTransferEasyPay.Transfer();
+            tf.Show();
+            this.Hide();
+        }
+
+        private void labelprofile_Click(object sender, EventArgs e)
+        {
+            ViewProfil vp = new ViewProfil();
+            vp.Show();
+            this.Hide();
+        }
+
+        private void labelEwallet_Click(object sender, EventArgs e)
+        {
+            FormWallet.walletView wv = new FormWallet.walletView();
+            wv.Show();
             this.Hide();
         }
     }

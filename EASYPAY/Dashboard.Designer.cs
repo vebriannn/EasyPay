@@ -33,32 +33,21 @@
             Uang_keluar = new DataGridViewTextBoxColumn();
             Uang_Masuk = new DataGridViewTextBoxColumn();
             labelNama = new Label();
-            pictureBackground = new PictureBox();
-            labelDashboard = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            pictureBox5 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureDashboard = new PictureBox();
-            pictureBox1 = new PictureBox();
+            labelWallet = new PictureBox();
             labelSaldo = new Label();
-            pictureListrik = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            labelTP = new Label();
+            labelPln = new Label();
+            labelAir = new Label();
+            labelNetflix = new Label();
+            labelPulsaData = new Label();
+            labelTfBank = new Label();
+            labelIsiSaldo = new Label();
+            labelPayment = new Label();
+            labelprofile = new Label();
+            labelDashboard = new Label();
+            labelEwallet = new Label();
             ((System.ComponentModel.ISupportInitialize)aktifitasDG).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBackground).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureDashboard).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureListrik).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)labelWallet).BeginInit();
             SuspendLayout();
             // 
             // aktifitasDG
@@ -86,115 +75,21 @@
             labelNama.BackColor = Color.Transparent;
             labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelNama.ForeColor = Color.Black;
-            labelNama.Location = new Point(80, 114);
+            labelNama.Location = new Point(80, 111);
             labelNama.Name = "labelNama";
             labelNama.Size = new Size(84, 19);
             labelNama.TabIndex = 38;
             labelNama.Text = "Maise Ivena L.";
             // 
-            // pictureBackground
+            // labelWallet
             // 
-            pictureBackground.Image = (Image)resources.GetObject("pictureBackground.Image");
-            pictureBackground.Location = new Point(-2, -1);
-            pictureBackground.Name = "pictureBackground";
-            pictureBackground.Size = new Size(806, 508);
-            pictureBackground.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBackground.TabIndex = 0;
-            pictureBackground.TabStop = false;
-            // 
-            // labelDashboard
-            // 
-            labelDashboard.AutoSize = true;
-            labelDashboard.BackColor = Color.Transparent;
-            labelDashboard.Font = new Font("Franklin Gothic Book", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelDashboard.ForeColor = Color.FromArgb(31, 148, 243);
-            labelDashboard.Location = new Point(86, 198);
-            labelDashboard.Name = "labelDashboard";
-            labelDashboard.Size = new Size(59, 15);
-            labelDashboard.TabIndex = 72;
-            labelDashboard.Text = "Dashboard";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Franklin Gothic Book", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(86, 231);
-            label5.Name = "label5";
-            label5.Size = new Size(48, 15);
-            label5.TabIndex = 71;
-            label5.Text = "Payment";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Franklin Gothic Book", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(85, 264);
-            label4.Name = "label4";
-            label4.Size = new Size(37, 15);
-            label4.TabIndex = 70;
-            label4.Text = "Wallet";
-            label4.Click += label4_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Franklin Gothic Book", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(85, 166);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 15);
-            label3.TabIndex = 69;
-            label3.Text = "Profile";
-            label3.Click += label3_Click;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = Color.Transparent;
-            pictureBox5.Image = Properties.Resources.wallet;
-            pictureBox5.Location = new Point(58, 261);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(19, 21);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 68;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.Image = Properties.Resources.wallet_add;
-            pictureBox3.Location = new Point(58, 228);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(19, 21);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 66;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureDashboard
-            // 
-            pictureDashboard.BackColor = Color.Transparent;
-            pictureDashboard.Image = Properties.Resources.hashtag;
-            pictureDashboard.Location = new Point(58, 195);
-            pictureDashboard.Name = "pictureDashboard";
-            pictureDashboard.Size = new Size(19, 21);
-            pictureDashboard.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureDashboard.TabIndex = 65;
-            pictureDashboard.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.person__1_1;
-            pictureBox1.Location = new Point(58, 162);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(19, 21);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 64;
-            pictureBox1.TabStop = false;
+            labelWallet.Image = (Image)resources.GetObject("labelWallet.Image");
+            labelWallet.Location = new Point(-2, -1);
+            labelWallet.Name = "labelWallet";
+            labelWallet.Size = new Size(806, 508);
+            labelWallet.SizeMode = PictureBoxSizeMode.StretchImage;
+            labelWallet.TabIndex = 0;
+            labelWallet.TabStop = false;
             // 
             // labelSaldo
             // 
@@ -206,97 +101,143 @@
             labelSaldo.TabIndex = 74;
             labelSaldo.Text = "Rp. 1000";
             // 
-            // pictureListrik
+            // labelTP
             // 
-            pictureListrik.Image = (Image)resources.GetObject("pictureListrik.Image");
-            pictureListrik.Location = new Point(277, 83);
-            pictureListrik.Name = "pictureListrik";
-            pictureListrik.Size = new Size(34, 35);
-            pictureListrik.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureListrik.TabIndex = 75;
-            pictureListrik.TabStop = false;
-            pictureListrik.Click += pictureListrik_Click;
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(81, 126);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 82;
+            labelTP.Text = "Maise Ivena L.";
             // 
-            // pictureBox2
+            // labelPln
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(351, 83);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(34, 35);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 76;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            labelPln.AutoSize = true;
+            labelPln.Location = new Point(292, 127);
+            labelPln.Name = "labelPln";
+            labelPln.Size = new Size(29, 15);
+            labelPln.TabIndex = 83;
+            labelPln.Text = "PLN";
+            labelPln.Click += labelPln_Click;
             // 
-            // pictureBox6
+            // labelAir
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(423, 83);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(34, 35);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 77;
-            pictureBox6.TabStop = false;
-            pictureBox6.Click += pictureBox6_Click;
+            labelAir.AutoSize = true;
+            labelAir.Location = new Point(388, 127);
+            labelAir.Name = "labelAir";
+            labelAir.Size = new Size(41, 15);
+            labelAir.TabIndex = 84;
+            labelAir.Text = "PDAM";
+            labelAir.Click += labelAir_Click;
             // 
-            // pictureBox7
+            // labelNetflix
             // 
-            pictureBox7.Image = Properties.Resources.icon__3_;
-            pictureBox7.Location = new Point(500, 83);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(34, 35);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 78;
-            pictureBox7.TabStop = false;
-            pictureBox7.Click += pictureBox7_Click;
+            labelNetflix.AutoSize = true;
+            labelNetflix.Location = new Point(485, 126);
+            labelNetflix.Name = "labelNetflix";
+            labelNetflix.Size = new Size(50, 15);
+            labelNetflix.TabIndex = 85;
+            labelNetflix.Text = "NETFLIX";
+            labelNetflix.Click += labelNetflix_Click;
             // 
-            // pictureBox4
+            // labelPulsaData
             // 
-            pictureBox4.Image = Properties.Resources.icon__3_;
-            pictureBox4.Location = new Point(277, 148);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(34, 35);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 79;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
+            labelPulsaData.AutoSize = true;
+            labelPulsaData.Location = new Point(579, 126);
+            labelPulsaData.Name = "labelPulsaData";
+            labelPulsaData.Size = new Size(73, 15);
+            labelPulsaData.TabIndex = 86;
+            labelPulsaData.Text = "PULSA DATA";
+            labelPulsaData.Click += labelPulsaData_Click;
+            // 
+            // labelTfBank
+            // 
+            labelTfBank.AutoSize = true;
+            labelTfBank.Location = new Point(258, 205);
+            labelTfBank.Name = "labelTfBank";
+            labelTfBank.Size = new Size(96, 15);
+            labelTfBank.TabIndex = 87;
+            labelTfBank.Text = "TRANSFER BANK";
+            labelTfBank.Click += labelTfBank_Click;
+            // 
+            // labelIsiSaldo
+            // 
+            labelIsiSaldo.AutoSize = true;
+            labelIsiSaldo.Location = new Point(387, 204);
+            labelIsiSaldo.Name = "labelIsiSaldo";
+            labelIsiSaldo.Size = new Size(43, 15);
+            labelIsiSaldo.TabIndex = 88;
+            labelIsiSaldo.Text = "TOPUP";
+            labelIsiSaldo.Click += labelIsiSaldo_Click;
+            // 
+            // labelPayment
+            // 
+            labelPayment.AutoSize = true;
+            labelPayment.Location = new Point(478, 204);
+            labelPayment.Name = "labelPayment";
+            labelPayment.Size = new Size(59, 15);
+            labelPayment.TabIndex = 89;
+            labelPayment.Text = "PAYMENT";
+            labelPayment.Click += labelPayment_Click;
+            // 
+            // labelprofile
+            // 
+            labelprofile.AutoSize = true;
+            labelprofile.Location = new Point(91, 160);
+            labelprofile.Name = "labelprofile";
+            labelprofile.Size = new Size(41, 15);
+            labelprofile.TabIndex = 90;
+            labelprofile.Text = "Profile";
+            labelprofile.Click += labelprofile_Click;
+            // 
+            // labelDashboard
+            // 
+            labelDashboard.AutoSize = true;
+            labelDashboard.Location = new Point(91, 187);
+            labelDashboard.Name = "labelDashboard";
+            labelDashboard.Size = new Size(64, 15);
+            labelDashboard.TabIndex = 91;
+            labelDashboard.Text = "Dashboard";
+            // 
+            // labelEwallet
+            // 
+            labelEwallet.AutoSize = true;
+            labelEwallet.Location = new Point(91, 216);
+            labelEwallet.Name = "labelEwallet";
+            labelEwallet.Size = new Size(40, 15);
+            labelEwallet.TabIndex = 92;
+            labelEwallet.Text = "Wallet";
+            labelEwallet.Click += labelEwallet_Click;
             // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 500);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureListrik);
-            Controls.Add(labelSaldo);
+            Controls.Add(labelEwallet);
             Controls.Add(labelDashboard);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureDashboard);
-            Controls.Add(pictureBox1);
+            Controls.Add(labelprofile);
+            Controls.Add(labelPayment);
+            Controls.Add(labelIsiSaldo);
+            Controls.Add(labelTfBank);
+            Controls.Add(labelPulsaData);
+            Controls.Add(labelNetflix);
+            Controls.Add(labelAir);
+            Controls.Add(labelPln);
+            Controls.Add(labelTP);
+            Controls.Add(labelSaldo);
             Controls.Add(aktifitasDG);
             Controls.Add(labelNama);
-            Controls.Add(pictureBackground);
+            Controls.Add(labelWallet);
             Name = "Dashboard";
             Text = "FormDashboard";
             Load += Dashboard_Load;
             ((System.ComponentModel.ISupportInitialize)aktifitasDG).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBackground).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureDashboard).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureListrik).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)labelWallet).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -304,22 +245,20 @@
         #endregion
         private DataGridView aktifitasDG;
         private Label labelNama;
-        private PictureBox pictureBackground;
-        private Label labelDashboard;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox3;
-        private PictureBox pictureDashboard;
-        private PictureBox pictureBox1;
+        private PictureBox labelWallet;
         private Label labelSaldo;
-        private PictureBox pictureListrik;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
         private DataGridViewTextBoxColumn Uang_keluar;
         private DataGridViewTextBoxColumn Uang_Masuk;
-        private PictureBox pictureBox4;
+        private Label labelTP;
+        private Label labelPln;
+        private Label labelAir;
+        private Label labelNetflix;
+        private Label labelPulsaData;
+        private Label labelTfBank;
+        private Label labelIsiSaldo;
+        private Label labelPayment;
+        private Label labelprofile;
+        private Label labelDashboard;
+        private Label labelEwallet;
     }
 }

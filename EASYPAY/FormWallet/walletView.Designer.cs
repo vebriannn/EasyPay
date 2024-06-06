@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(walletView));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             pictureBox1 = new PictureBox();
             historyDG = new DataGridView();
             np = new DataGridViewTextBoxColumn();
@@ -37,6 +37,11 @@
             harga = new DataGridViewTextBoxColumn();
             tgl = new DataGridViewTextBoxColumn();
             labelSaldo = new Label();
+            labelprofile = new Label();
+            labelDashboard = new Label();
+            labelEwallet = new Label();
+            labelNama = new Label();
+            labelTP = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)historyDG).BeginInit();
             SuspendLayout();
@@ -56,14 +61,14 @@
             historyDG.BorderStyle = BorderStyle.None;
             historyDG.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             historyDG.Columns.AddRange(new DataGridViewColumn[] { np, jp, harga, tgl });
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Window;
-            dataGridViewCellStyle1.Font = new Font("Poppins", 10F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
-            historyDG.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = SystemColors.Window;
+            dataGridViewCellStyle7.Font = new Font("Poppins", 10F);
+            dataGridViewCellStyle7.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
+            historyDG.DefaultCellStyle = dataGridViewCellStyle7;
             historyDG.Location = new Point(240, 293);
             historyDG.Name = "historyDG";
             historyDG.Size = new Size(443, 157);
@@ -100,11 +105,69 @@
             labelSaldo.TabIndex = 75;
             labelSaldo.Text = "Rp. 1000";
             // 
+            // labelprofile
+            // 
+            labelprofile.AutoSize = true;
+            labelprofile.Location = new Point(85, 157);
+            labelprofile.Name = "labelprofile";
+            labelprofile.Size = new Size(41, 15);
+            labelprofile.TabIndex = 91;
+            labelprofile.Text = "Profile";
+            labelprofile.Click += labelprofile_Click;
+            // 
+            // labelDashboard
+            // 
+            labelDashboard.AutoSize = true;
+            labelDashboard.Location = new Point(85, 185);
+            labelDashboard.Name = "labelDashboard";
+            labelDashboard.Size = new Size(64, 15);
+            labelDashboard.TabIndex = 92;
+            labelDashboard.Text = "Dashboard";
+            labelDashboard.Click += labelDashboard_Click;
+            // 
+            // labelEwallet
+            // 
+            labelEwallet.AutoSize = true;
+            labelEwallet.Location = new Point(86, 213);
+            labelEwallet.Name = "labelEwallet";
+            labelEwallet.Size = new Size(40, 15);
+            labelEwallet.TabIndex = 93;
+            labelEwallet.Text = "Wallet";
+            // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.BackColor = Color.Transparent;
+            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = Color.Black;
+            labelNama.Location = new Point(86, 111);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(84, 19);
+            labelNama.TabIndex = 94;
+            labelNama.Text = "Maise Ivena L.";
+            // 
+            // labelTP
+            // 
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(88, 124);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 95;
+            labelTP.Text = "Maise Ivena L.";
+            // 
             // walletView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(labelTP);
+            Controls.Add(labelNama);
+            Controls.Add(labelEwallet);
+            Controls.Add(labelDashboard);
+            Controls.Add(labelprofile);
             Controls.Add(labelSaldo);
             Controls.Add(historyDG);
             Controls.Add(pictureBox1);
@@ -126,5 +189,10 @@
         private DataGridViewTextBoxColumn harga;
         private DataGridViewTextBoxColumn tgl;
         private Label labelSaldo;
+        private Label labelprofile;
+        private Label labelDashboard;
+        private Label labelEwallet;
+        private Label labelNama;
+        private Label labelTP;
     }
 }

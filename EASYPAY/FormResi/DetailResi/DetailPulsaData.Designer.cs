@@ -37,6 +37,7 @@
             labelNomor = new Label();
             labelP = new Label();
             labelS = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -134,11 +135,22 @@
             labelS.TabIndex = 14;
             labelS.Text = "label1";
             // 
+            // button1
+            // 
+            button1.Location = new Point(71, 433);
+            button1.Name = "button1";
+            button1.Size = new Size(157, 23);
+            button1.TabIndex = 15;
+            button1.Text = "Kembali ke Dashboard";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // DetailPulsaData
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(button1);
             Controls.Add(labelS);
             Controls.Add(labelP);
             Controls.Add(labelNomor);
@@ -165,5 +177,6 @@
         private Label labelNomor;
         private Label labelP;
         private Label labelS;
+        private Button button1;
     }
 }

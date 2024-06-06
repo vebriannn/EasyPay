@@ -13,6 +13,11 @@ namespace EASYPAY.FormTransferBank
     public partial class choiceBank : Form
     {
         public static string namaBank = "";
+
+
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
         public choiceBank()
         {
             InitializeComponent();
@@ -20,7 +25,10 @@ namespace EASYPAY.FormTransferBank
 
         private void choiceBank_Load(object sender, EventArgs e)
         {
-
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
         }
 
         private void btnBca_Click(object sender, EventArgs e)

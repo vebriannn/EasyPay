@@ -63,6 +63,26 @@ namespace EASYPAY.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bank_logo {
+            get {
+                object obj = ResourceManager.GetObject("bank-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bank_logo__1_ {
+            get {
+                object obj = ResourceManager.GetObject("bank-logo (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap card_receive {
             get {
                 object obj = ResourceManager.GetObject("card-receive", resourceCulture);
@@ -366,6 +386,16 @@ namespace EASYPAY.Properties {
         internal static System.Drawing.Bitmap setting_2 {
             get {
                 object obj = ResourceManager.GetObject("setting-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transaction_type {
+            get {
+                object obj = ResourceManager.GetObject("transaction-type", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

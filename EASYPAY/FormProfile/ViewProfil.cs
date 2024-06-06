@@ -22,6 +22,7 @@ namespace EASYPAY.profile
         public static string GenderUser;
         public static string nomorUser;
         public static string pinUser;
+        string tipeUsers;
 
         MySqlConnection connection;
 
@@ -34,13 +35,22 @@ namespace EASYPAY.profile
         {
             GetDataDB();
             labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelprofile.BackColor = Color.Transparent;
+            labelprofile.ForeColor = ColorTranslator.FromHtml("#1F94F3");
+            labelDashboard.BackColor = Color.Transparent;
+            labelEwallet.BackColor = Color.Transparent;
+
+            labelNama.Text = namaUser;
+            labelTP.Text = tipeUsers;
+            
+
+
             label1.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             label2.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             label3.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             label4.BackColor = ColorTranslator.FromHtml("#BBDEFA");
             label5.BackColor = ColorTranslator.FromHtml("#BBDEFA");
-
-
             btnUpgrade.FlatStyle = FlatStyle.Flat;
             btnUpgrade.FlatAppearance.BorderSize = 0;
             btnUpgrade.BackColor = ColorTranslator.FromHtml("#41A6F4");
@@ -71,7 +81,7 @@ namespace EASYPAY.profile
                 MySqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    labelNama.Text = reader.GetString(1);
+                    // labelNama.Text = reader.GetString(1);
                     label1.Text = reader.GetString(1);
                     label2.Text = reader.GetString(2);
                     label3.Text = reader.GetString(3);
@@ -81,6 +91,7 @@ namespace EASYPAY.profile
                     namaUser = reader.GetString(1);
                     GenderUser = reader.GetString(2);
                     nomorUser = reader.GetString(3);
+                    tipeUsers = reader.GetString(5);
                     pinUser = reader.GetString(4);
 
                 }
@@ -110,6 +121,20 @@ namespace EASYPAY.profile
         {
             premiumAkun pa = new premiumAkun();
             pa.Show();
+            this.Hide();
+        }
+
+        private void labelDashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard db = new Dashboard();
+            db.Show();
+            this.Hide();
+        }
+
+        private void labelEwallet_Click(object sender, EventArgs e)
+        {
+            FormWallet.walletView wv = new FormWallet.walletView();
+            wv.Show();
             this.Hide();
         }
     }

@@ -1,5 +1,6 @@
 ﻿using EASYPAY.FormAuth;
 using EASYPAY.FormHslPbyr;
+using EASYPAY.profile;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,9 @@ namespace EASYPAY.FormWallet
         string db = SignIn.db;
         string saldo = Dashboard.saldoFormat;
 
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
         MySqlConnection connection;
 
         public walletView()
@@ -33,8 +37,19 @@ namespace EASYPAY.FormWallet
             checkDataGrid();
 
             labelSaldo.BackColor = ColorTranslator.FromHtml("#63B4F6");
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelprofile.BackColor = Color.Transparent;
+            labelDashboard.BackColor = Color.Transparent;
+            labelEwallet.BackColor = Color.Transparent;
+            labelEwallet.ForeColor = ColorTranslator.FromHtml("#1F94F3");
 
             labelSaldo.Text = "Rp. " + saldo;
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
         }
 
         private void checkDataGrid()
@@ -78,6 +93,20 @@ namespace EASYPAY.FormWallet
                 resi.Show();
                 this.Hide();
             }
+        }
+
+        private void labelDashboard_Click(object sender, EventArgs e)
+        {
+           Dashboard dn = new Dashboard();
+            dn.Show();
+            this.Hide();
+        }
+
+        private void labelprofile_Click(object sender, EventArgs e)
+        {
+            ViewProfil vp = new ViewProfil();
+            vp.Show();
+            this.Hide();
         }
     }
 }

@@ -36,6 +36,8 @@
             Btn300 = new Button();
             checkBoxBalance = new CheckBox();
             BtnConfirmBuy = new Button();
+            labelNama = new Label();
+            labelTP = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -123,11 +125,37 @@
             BtnConfirmBuy.Visible = false;
             BtnConfirmBuy.Click += BtnConfirmBuy_Click;
             // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.BackColor = Color.Transparent;
+            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = Color.Black;
+            labelNama.Location = new Point(84, 110);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(84, 19);
+            labelNama.TabIndex = 41;
+            labelNama.Text = "Maise Ivena L.";
+            // 
+            // labelTP
+            // 
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(86, 123);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 84;
+            labelTP.Text = "Maise Ivena L.";
+            // 
             // BuyTokenPln
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(labelTP);
+            Controls.Add(labelNama);
             Controls.Add(BtnConfirmBuy);
             Controls.Add(checkBoxBalance);
             Controls.Add(Btn300);
@@ -152,5 +180,7 @@
         private Button Btn300;
         private CheckBox checkBoxBalance;
         private Button BtnConfirmBuy;
+        private Label labelNama;
+        private Label labelTP;
     }
 }

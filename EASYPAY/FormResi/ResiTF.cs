@@ -37,8 +37,14 @@ namespace EASYPAY.FormResi
             labelAmount.Text = "RP." + totaltf.ToString("N0");
             labelDate.Text = date.ToString();
             labelFee.Text = "Rp." + Fee.ToString();
-      
+
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard db = new Dashboard();
+            db.Show();
+            this.Hide();
+        }
     }
 }

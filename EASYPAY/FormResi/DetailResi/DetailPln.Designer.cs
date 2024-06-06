@@ -37,6 +37,7 @@
             labelToken = new Label();
             labelMeteran = new Label();
             labelTgl = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -135,11 +136,22 @@
             labelTgl.Text = "label1";
             labelTgl.Click += labelTgl_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(68, 436);
+            button1.Name = "button1";
+            button1.Size = new Size(157, 23);
+            button1.TabIndex = 11;
+            button1.Text = "Kembali ke Dashboard";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // DetailPln
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(button1);
             Controls.Add(labelTgl);
             Controls.Add(labelMeteran);
             Controls.Add(labelToken);
@@ -166,5 +178,6 @@
         private Label labelToken;
         private Label labelMeteran;
         private Label labelTgl;
+        private Button button1;
     }
 }

@@ -35,6 +35,8 @@
             btnBtn = new Button();
             btnMandiri = new Button();
             btnCimb = new Button();
+            labelNama = new Label();
+            labelTP = new Label();
             SuspendLayout();
             // 
             // btnBca
@@ -97,6 +99,30 @@
             btnCimb.UseVisualStyleBackColor = true;
             btnCimb.Click += btnCimb_Click;
             // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.BackColor = Color.Transparent;
+            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = Color.Black;
+            labelNama.Location = new Point(86, 109);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(84, 19);
+            labelNama.TabIndex = 39;
+            labelNama.Text = "Maise Ivena L.";
+            // 
+            // labelTP
+            // 
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(87, 123);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 83;
+            labelTP.Text = "Maise Ivena L.";
+            // 
             // choiceBank
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -104,6 +130,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 500);
+            Controls.Add(labelTP);
+            Controls.Add(labelNama);
             Controls.Add(btnCimb);
             Controls.Add(btnMandiri);
             Controls.Add(btnBtn);
@@ -115,6 +143,7 @@
             Text = "choiceBank";
             Load += choiceBank_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -125,5 +154,7 @@
         private Button btnBtn;
         private Button btnMandiri;
         private Button btnCimb;
+        private Label labelNama;
+        private Label labelTP;
     }
 }

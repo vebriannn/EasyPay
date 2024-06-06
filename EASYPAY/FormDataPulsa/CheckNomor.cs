@@ -15,6 +15,9 @@ namespace EASYPAY.FormDataPulsa
 
         public static string nomorTujuan = "";
 
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
         public CheckNomor()
         {
             InitializeComponent();
@@ -31,6 +34,11 @@ namespace EASYPAY.FormDataPulsa
             btnData.FlatStyle = FlatStyle.Flat;
             btnData.FlatAppearance.BorderSize = 0;
             btnData.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
         }
 
         private void btnCheckNumber_Click(object sender, EventArgs e)

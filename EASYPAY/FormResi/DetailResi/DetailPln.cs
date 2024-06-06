@@ -54,7 +54,7 @@ namespace EASYPAY.FormResi.DetailResi
                     labelNama.Text = reader.GetString(8);
                     labelMeteran.Text = reader.GetString(11);
                     labelKwh.Text = reader.GetString(9);
-                    labelHarga.Text ="Rp. " + reader.GetDouble(4).ToString("N0");
+                    labelHarga.Text = "Rp. " + reader.GetDouble(4).ToString("N0");
                     labelToken.Text = reader.GetString(10);
                     labelTgl.Text = reader.GetDateTime(5).ToString();
                 }
@@ -76,6 +76,13 @@ namespace EASYPAY.FormResi.DetailResi
         private void labelTgl_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard db = new Dashboard();
+            db.Show();
+            this.Hide();
         }
     }
 }

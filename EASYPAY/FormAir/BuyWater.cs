@@ -22,6 +22,9 @@ namespace EASYPAY.FormAir
         private string methodBayar;
         private double sisaSaldo = 0;
 
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
         string db = SignIn.db;
         string id = SignIn.id_user;
 
@@ -48,6 +51,11 @@ namespace EASYPAY.FormAir
             BtnConfirmBuy.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             labelNomor.Text = CheckWater.IDMeteran;
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
         }
 
         private void Btn50_Click(object sender, EventArgs e)

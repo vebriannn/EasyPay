@@ -25,6 +25,9 @@ namespace EASYPAY.FormDataPulsa.Pulsa
         string db = SignIn.db;
         string id = SignIn.id_user;
 
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
         MySqlConnection connection;
 
         public ChoicePulsa()
@@ -64,6 +67,11 @@ namespace EASYPAY.FormDataPulsa.Pulsa
 
             BtnConfirmBuy.FlatStyle = FlatStyle.Flat;
             BtnConfirmBuy.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
         }
 
         private void btn50_Click(object sender, EventArgs e)

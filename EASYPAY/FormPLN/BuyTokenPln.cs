@@ -21,6 +21,9 @@ namespace EASYPAY.FormPLN
         private string methodBayar;
         private double sisaSaldo = 0;
 
+        string nama = Dashboard.namaUsers;
+        string tipe_pengguna = Dashboard.tipe_pengguna;
+
 
         string db = SignIn.db;
         string id = SignIn.id_user;
@@ -49,6 +52,11 @@ namespace EASYPAY.FormPLN
             labelNomor.BackColor = ColorTranslator.FromHtml("#BBDEFA");
 
             checkBoxBalance.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+
+            labelNama.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelTP.BackColor = ColorTranslator.FromHtml("#BBDEFA");
+            labelNama.Text = nama;
+            labelTP.Text = tipe_pengguna;
 
             BtnConfirmBuy.Visible = false;
 

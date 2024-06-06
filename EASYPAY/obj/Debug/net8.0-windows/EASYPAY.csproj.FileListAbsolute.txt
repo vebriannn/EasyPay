@@ -57,3 +57,11 @@ C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fend
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTransferBank.choiceBank.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTransferBank.Transfer.resources
 C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormResi.ResiTF.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTopup.choiceMetode.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTopup.Alfaindo.AlfamartTopup.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTopup.Alfaindo.bayar.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTopup.Alfaindo.IndomartTopup.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTopup.Bank.bayar.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormResi.FormTopupBank.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTransferEasyPay.Transfer.resources
+C:\Users\novia\OneDrive\Documents\XI PPLG6 VEBRIANN\Semester 1\MK 2 PBT Pak Fendi\praktek\EASYPAY\EASYPAY\obj\Debug\net8.0-windows\EASYPAY.FormTransferEasyPay.Alert.resources

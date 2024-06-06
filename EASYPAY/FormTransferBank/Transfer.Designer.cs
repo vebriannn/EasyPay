@@ -34,6 +34,8 @@
             textSaldoBk = new TextBox();
             textPesan = new TextBox();
             btnTranfer = new Button();
+            labelTP = new Label();
+            labelNama = new Label();
             SuspendLayout();
             // 
             // namaBank
@@ -80,6 +82,30 @@
             btnTranfer.UseVisualStyleBackColor = true;
             btnTranfer.Click += btnTranfer_Click;
             // 
+            // labelTP
+            // 
+            labelTP.AutoSize = true;
+            labelTP.BackColor = Color.Transparent;
+            labelTP.Font = new Font("Poppins", 7.25F);
+            labelTP.ForeColor = Color.Black;
+            labelTP.Location = new Point(88, 120);
+            labelTP.Name = "labelTP";
+            labelTP.Size = new Size(76, 17);
+            labelTP.TabIndex = 83;
+            labelTP.Text = "Maise Ivena L.";
+            // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.BackColor = Color.Transparent;
+            labelNama.Font = new Font("Poppins", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = Color.Black;
+            labelNama.Location = new Point(87, 106);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(84, 19);
+            labelNama.TabIndex = 84;
+            labelNama.Text = "Maise Ivena L.";
+            // 
             // Transfer
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -87,6 +113,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 500);
+            Controls.Add(labelTP);
+            Controls.Add(labelNama);
             Controls.Add(btnTranfer);
             Controls.Add(textPesan);
             Controls.Add(textSaldoBk);
@@ -107,5 +135,7 @@
         private TextBox textSaldoBk;
         private TextBox textPesan;
         private Button btnTranfer;
+        private Label labelTP;
+        private Label labelNama;
     }
 }
